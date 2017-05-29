@@ -3,6 +3,7 @@
 @import "../libs/font-awesome/css/font-awesome.min.css";
 @import "../libs/lightslider/dist/css/lightslider.min.css";
 
+
 body{
 	font-size: 16px;
 	min-width: 320px;
@@ -107,6 +108,15 @@ header{
   @media only screen and (max-width : 1320px){
     margin-left: 70px;
   }
+  @media only screen and (max-width : 1221px){
+    margin-left: 20px;
+  }
+  @media only screen and (max-width : 1171px){
+    margin-left: 15px;
+  }
+  @media only screen and (max-width : 1096px){
+    display: none;
+  }
 }
 
 
@@ -125,6 +135,11 @@ header{
 		font-family:FuturaNewBook;
 		line-height: 33px;
 	}
+  @media only screen and (max-width : 1171px){
+    h3{
+      font-size: 18px;
+    }
+  }
 }
 .popup-but{
 	display: inline-block;
@@ -142,6 +157,12 @@ header{
 			text-decoration: none;
 			background-color: transparent;
 		}
+	}
+  @media only screen and (max-width : 1171px){
+    margin-left: 10px;
+  }
+	@media only screen and (max-width : 991px){
+		display: block;
 	}
 }
 
@@ -173,6 +194,11 @@ header{
 			text-decoration: none;
 		}
 	}
+	@media only screen and (max-width : 991px){
+		position: absolute;
+		top: -250px;
+		right: 50px;
+	}
 }
 
 
@@ -188,5 +214,17 @@ header{
 	span{
 		color: #ff0920;
 	}
+	@media only screen and (max-width : 991px){
+		h1{
+			font-size: 38px;
+			line-height: 40px;
+		}
+	}
 }
 
+
+$hamburger-hover-opacity: 1;
+$hamburger-types: (arrow);
+$hamburger-layer-color: #fff;
+
+@import "../libs/CSS-Hamburgers/dist/css-hamburgers.min.css";

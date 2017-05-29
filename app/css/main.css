@@ -368,7 +368,8 @@ body textarea:required:valid {
     .right-foto-dima {
       min-height: 623px; }
       .right-foto-dima img {
-        margin-top: 0; } }
+        margin-top: 0;
+        width: 100%; } }
 
 .name-d {
   margin-top: 20px;

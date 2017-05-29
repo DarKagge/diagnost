@@ -1,5 +1,6 @@
 @import url(../libs/font-awesome/css/font-awesome.min.css);
 @import url(../libs/lightslider/dist/css/lightslider.min.css);
+@import url(../libs/CSS-Hamburgers/dist/css-hamburgers.min.css);
 body {
   font-size: 16px;
   min-width: 320px;
@@ -84,6 +85,15 @@ header {
   @media only screen and (max-width: 1320px) {
     .social {
       margin-left: 70px; } }
+  @media only screen and (max-width: 1221px) {
+    .social {
+      margin-left: 20px; } }
+  @media only screen and (max-width: 1171px) {
+    .social {
+      margin-left: 15px; } }
+  @media only screen and (max-width: 1096px) {
+    .social {
+      display: none; } }
 
 .right-head {
   float: right; }
@@ -97,6 +107,9 @@ header {
     text-align: right;
     font-family: FuturaNewBook;
     line-height: 33px; }
+  @media only screen and (max-width: 1171px) {
+    .city h3 {
+      font-size: 18px; } }
 
 .popup-but {
   display: inline-block;
@@ -113,6 +126,12 @@ header {
     .popup-but a:hover {
       text-decoration: none;
       background-color: transparent; }
+  @media only screen and (max-width: 1171px) {
+    .popup-but {
+      margin-left: 10px; } }
+  @media only screen and (max-width: 991px) {
+    .popup-but {
+      display: block; } }
 
 .head-menu {
   margin-top: 35px;
@@ -136,6 +155,11 @@ header {
       border-top: 3px solid #ff0920;
       color: #ff0920;
       text-decoration: none; }
+  @media only screen and (max-width: 991px) {
+    .head-menu {
+      position: absolute;
+      top: -250px;
+      right: 50px; } }
 
 .head-banner {
   margin-top: 100px;
@@ -147,3 +171,7 @@ header {
     font-family: FuturaNewDemi; }
   .head-banner span {
     color: #ff0920; }
+  @media only screen and (max-width: 991px) {
+    .head-banner h1 {
+      font-size: 38px;
+      line-height: 40px; } }
