@@ -47,6 +47,10 @@ body textarea:required:valid {
     font-size: 30px;
     line-height: 35px; }
 
+@media only screen and (max-width: 1750px) {
+  .experience li:first-child {
+    padding-left: 60px; } }
+
 .amenities {
   background-color: #eaf3f6;
   left: 90px;
@@ -55,6 +59,11 @@ body textarea:required:valid {
   padding-bottom: 60px; }
   .amenities .inner {
     right: 90px; }
+  @media only screen and (max-width: 1750px) {
+    .amenities {
+      left: 0; }
+      .amenities .inner {
+        right: 0; } }
 
 .all-title {
   top: -29px;
@@ -87,6 +96,16 @@ body textarea:required:valid {
       font-family: FuturaNewBook; }
     .am-items li .text-am {
       padding: 38px 65px 38px 50px; }
+    @media only screen and (max-width: 1750px) {
+      .am-items li {
+        margin: 29.5px 14px; }
+        .am-items li:nth-child(2n) {
+          margin-right: 0; }
+        .am-items li:nth-child(2n+1) {
+          margin-left: 0; } }
+    @media only screen and (max-width: 1450px) {
+      .am-items li {
+        max-width: 600px; } }
   .am-items .title-item {
     height: 363px;
     position: relative; }
@@ -98,6 +117,11 @@ body textarea:required:valid {
       font-size: 50px;
       line-height: 52px;
       font-family: FuturaNewDemi; }
+    .am-items .title-item img {
+      width: 100%; }
+    @media only screen and (max-width: 1450px) {
+      .am-items .title-item {
+        height: auto; } }
 
 .price-am {
   margin-top: 35px; }
@@ -128,15 +152,53 @@ body textarea:required:valid {
   .auto-slide .inner {
     left: 90px; }
   .auto-slide .all-title {
-    left: -50px; }
+    left: 45%;
+    z-index: 69; }
     .auto-slide .all-title h2 {
       line-height: 55px; }
+    @media only screen and (max-width: 1320px) {
+      .auto-slide .all-title {
+        left: 0; } }
+  .auto-slide .lSSlideOuter .lSPager.lSpg {
+    position: absolute;
+    bottom: 150px;
+    left: 52%; }
+  .auto-slide .lSSlideOuter .lSPager.lSpg > li a {
+    padding-top: 5px;
+    background-color: #4b5153;
+    width: 16px;
+    height: 16px;
+    -webkit-border-radius: 120px;
+    border-radius: 120px;
+    display: block;
+    margin: 0 10px; }
+    .auto-slide .lSSlideOuter .lSPager.lSpg > li a:hover {
+      background-color: #fff; }
+  .auto-slide .lSSlideOuter .lSPager.lSpg > li.active a, .auto-slide .lSSlideOuter .lSPager.lSpg > li:hover a {
+    background-color: #fff; }
+  @media only screen and (max-width: 1750px) {
+    .auto-slide {
+      right: 0; }
+      .auto-slide .inner {
+        left: 0; } }
+  @media only screen and (max-width: 1450px) {
+    .auto-slide .lSSlideOuter .lSPager.lSpg {
+      position: absolute;
+      bottom: 100px; } }
+  @media only screen and (max-width: 1320px) {
+    .auto-slide {
+      padding: 0 25px; }
+      .auto-slide .lSSlideOuter .lSPager.lSpg {
+        left: 55%; } }
 
 .img-slide-auto {
   padding-top: 69px;
   margin-left: 90px; }
   .img-slide-auto img {
     width: 100%; }
+  @media only screen and (max-width: 1450px) {
+    .img-slide-auto {
+      margin-left: 25px; } }
 
 .right-text-auto {
   padding-top: 150px;
@@ -154,27 +216,9 @@ body textarea:required:valid {
 .slider-auto-inputs {
   padding-left: 30px;
   padding-top: 30px; }
-
-.pagination-slider-a {
-  float: left;
-  margin-top: 30px; }
-  .pagination-slider-a li {
-    float: left; }
-    .pagination-slider-a li:first-child a {
-      margin-left: 0; }
-  .pagination-slider-a a {
-    padding-top: 5px;
-    background-color: #4b5153;
-    width: 16px;
-    height: 16px;
-    -webkit-border-radius: 120px;
-    border-radius: 120px;
-    display: block;
-    margin: 0 10px; }
-    .pagination-slider-a a:hover {
-      background-color: #fff; }
-  .pagination-slider-a .active {
-    background-color: #fff; }
+  @media only screen and (max-width: 1450px) {
+    .slider-auto-inputs {
+      padding-bottom: 70px; } }
 
 .arrow-slider-a {
   text-align: right;
@@ -208,6 +252,11 @@ body textarea:required:valid {
     right: 90px; }
   .reviews .all-title {
     left: -50px; }
+  @media only screen and (max-width: 1750px) {
+    .reviews {
+      left: 0; }
+      .reviews .inner {
+        right: 0; } }
 
 .slider-reviews {
   min-height: 425px; }
@@ -233,6 +282,9 @@ body textarea:required:valid {
   margin-left: 200px; }
   .img-client img {
     width: 100%; }
+  @media only screen and (max-width: 1450px) {
+    .img-client {
+      margin: 0 auto; } }
 
 .text-client h2 {
   font-size: 28px;
@@ -273,6 +325,9 @@ body textarea:required:valid {
     background-repeat: no-repeat; }
     .arrow-slider-r .right-arrow-r:hover {
       background-image: url("../img/arrow-slider-red-r.png"); }
+  @media only screen and (max-width: 1320px) {
+    .arrow-slider-r {
+      margin-left: -45px; } }
 
 .quest {
   background-color: #ebf3f6;
@@ -280,6 +335,11 @@ body textarea:required:valid {
   right: 90px; }
   .quest .inner {
     left: 90px; }
+  @media only screen and (max-width: 1750px) {
+    .quest {
+      right: 0; }
+      .quest .inner {
+        left: 0; } }
 
 .left-q-d {
   float: left;
@@ -304,6 +364,11 @@ body textarea:required:valid {
   text-align: center; }
   .right-foto-dima img {
     margin-top: -45px; }
+  @media only screen and (max-width: 1450px) {
+    .right-foto-dima {
+      min-height: 623px; }
+      .right-foto-dima img {
+        margin-top: 0; } }
 
 .name-d {
   margin-top: 20px;
@@ -320,6 +385,9 @@ body textarea:required:valid {
   margin: 90px 0; }
   .forma form {
     border: 5px solid #ebf3f6; }
+  @media only screen and (max-width: 1750px) {
+    .forma {
+      padding: 25px; } }
 
 .left-img {
   width: 50%;
@@ -328,6 +396,14 @@ body textarea:required:valid {
     position: absolute;
     left: -60px;
     top: -50px; }
+  @media only screen and (max-width: 1600px) {
+    .left-img {
+      float: left; }
+      .left-img img {
+        position: relative;
+        width: 100%;
+        top: auto;
+        left: auto; } }
 
 .right-form {
   width: 50%;
@@ -380,6 +456,12 @@ body textarea:required:valid {
     width: 100%;
     padding: 19px 0;
     margin-top: 20px; }
+  @media only screen and (max-width: 1600px) {
+    .right-form h2 {
+      font-size: 40px; } }
+  @media only screen and (max-width: 1320px) {
+    .right-form h2 {
+      font-size: 35px; } }
 
 footer {
   background-color: #212425;
@@ -408,6 +490,9 @@ footer {
     border: 5px solid #383a3b; }
     footer .popup-but a:hover {
       background-color: transparent; }
+  @media only screen and (max-width: 1750px) {
+    footer {
+      padding: 70px 25px; } }
 
 .footer-menu {
   float: left;

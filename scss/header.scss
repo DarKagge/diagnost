@@ -50,7 +50,9 @@ header{
 	background-size: 97%;
   @media only screen and (max-width : 1750px){
       background-size: cover;
+      padding: 25px;
   }
+
 }
 
 
@@ -67,6 +69,13 @@ header{
 		opacity: 0.6;
 		margin-left: 40px;
 	}
+  @media only screen and (max-width : 1450px){
+     p{
+       display: block;
+       margin-left: 0;
+       margin-top: 14px;
+     }
+  }
 }
 
 .social{
@@ -92,6 +101,12 @@ header{
 			}
 		}
 	}
+  @media only screen and (max-width : 1450px){
+    margin-left: 150px;
+  }
+  @media only screen and (max-width : 1320px){
+    margin-left: 70px;
+  }
 }
 
 

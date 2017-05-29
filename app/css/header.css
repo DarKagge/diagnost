@@ -39,7 +39,8 @@ header {
   background-size: 97%; }
   @media only screen and (max-width: 1750px) {
     header {
-      background-size: cover; } }
+      background-size: cover;
+      padding: 25px; } }
 
 .logo {
   float: left; }
@@ -52,6 +53,11 @@ header {
     color: #fff;
     opacity: 0.6;
     margin-left: 40px; }
+  @media only screen and (max-width: 1450px) {
+    .logo p {
+      display: block;
+      margin-left: 0;
+      margin-top: 14px; } }
 
 .social {
   margin-left: 50px;
@@ -72,6 +78,12 @@ header {
       font-size: 23px; }
       .social ul li a:hover {
         color: red; }
+  @media only screen and (max-width: 1450px) {
+    .social {
+      margin-left: 150px; } }
+  @media only screen and (max-width: 1320px) {
+    .social {
+      margin-left: 70px; } }
 
 .right-head {
   float: right; }

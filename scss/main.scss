@@ -63,6 +63,13 @@ body textarea:required:valid{
             line-height: 35px;
         }
     }
+    @media only screen and (max-width : 1750px){
+        li{
+            &:first-child{
+                padding-left: 60px;
+            }
+        }
+    }
 }
 
 .amenities{
@@ -73,6 +80,12 @@ body textarea:required:valid{
     padding-bottom: 60px;
     .inner{
         right: 90px;
+    }
+    @media only screen and (max-width : 1750px){
+        left: 0;
+        .inner{
+            right: 0;
+        }
     }
 }
 
@@ -114,6 +127,18 @@ body textarea:required:valid{
         .text-am{
             padding: 38px 65px 38px 50px;
         }
+        @media only screen and (max-width : 1750px){
+            margin: 29.5px 14px;
+            &:nth-child(2n){
+                margin-right: 0;
+            }
+            &:nth-child(2n+1){
+                margin-left: 0;
+            }
+        }
+        @media only screen and (max-width : 1450px){
+            max-width: 600px;
+        }
     }
     .title-item{
         height: 363px;
@@ -127,7 +152,14 @@ body textarea:required:valid{
             line-height: 52px;
             font-family:FuturaNewDemi;
         }
+        img{
+            width: 100%;
+        }
+        @media only screen and (max-width : 1450px){
+            height: auto;
+        }
     }
+
 
 }
 
@@ -168,9 +200,51 @@ body textarea:required:valid{
         left: 90px;
     }
     .all-title{
-        left: -50px;
+        left: 45%;
+        z-index: 69;
         h2{
             line-height: 55px;
+        }
+        @media only screen and (max-width : 1320px){
+            left: 0;
+        }
+    }
+    .lSSlideOuter .lSPager.lSpg{
+        position: absolute;
+        bottom: 150px;
+        left: 52%;
+    }
+    .lSSlideOuter .lSPager.lSpg>li a{
+        padding-top: 5px;
+        background-color: #4b5153;
+        width: 16px;
+        height: 16px;
+        border-radius: 120px;
+        display: block;
+        margin: 0 10px;
+        &:hover{
+            background-color: #fff;
+        }
+    }
+    .lSSlideOuter .lSPager.lSpg>li.active a, .lSSlideOuter .lSPager.lSpg>li:hover a{
+        background-color: #fff;
+    }
+    @media only screen and (max-width : 1750px){
+        right: 0;
+        .inner{
+            left: 0;
+        }
+    }
+    @media only screen and (max-width : 1450px){
+        .lSSlideOuter .lSPager.lSpg{
+            position: absolute;
+            bottom: 100px;
+        }
+    }
+    @media only screen and (max-width : 1320px){
+        padding: 0 25px;
+       .lSSlideOuter .lSPager.lSpg{
+            left: 55%;
         }
     }
 }
@@ -180,6 +254,9 @@ body textarea:required:valid{
     margin-left: 90px;
     img{
         width: 100%;
+    }
+    @media only screen and (max-width : 1450px){
+        margin-left: 25px;
     }
 }
 
@@ -204,36 +281,13 @@ body textarea:required:valid{
 .slider-auto-inputs{
     padding-left: 30px;
     padding-top: 30px;
+    @media only screen and (max-width : 1450px){
+        padding-bottom: 70px;
+    }
 }
 
 
-.pagination-slider-a{
-    float: left;
-    margin-top: 30px;
-    li{
-        float: left;
-        &:first-child{
-            a{
-                margin-left: 0;
-            }
-        }
-    }
-    a{
-        padding-top: 5px;
-        background-color: #4b5153;
-        width: 16px;
-        height: 16px;
-        border-radius: 120px;
-        display: block;
-        margin: 0 10px;
-        &:hover{
-            background-color: #fff;
-        }
-    }
-    .active{
-        background-color: #fff;
-    }
-}
+
 
 
 .arrow-slider-a{
@@ -280,6 +334,12 @@ body textarea:required:valid{
     .all-title{
         left: -50px;
     }
+    @media only screen and (max-width : 1750px){
+        left: 0;
+        .inner{
+            right: 0;
+        }
+    }
 }
 
 
@@ -313,6 +373,9 @@ body textarea:required:valid{
     margin-left: 200px;
     img{
         width: 100%;
+    }
+    @media only screen and (max-width : 1450px){
+        margin: 0 auto;
     }
 }
 
@@ -370,6 +433,9 @@ body textarea:required:valid{
             background-image: url("../img/arrow-slider-red-r.png");
         }
     }
+    @media only screen and (max-width : 1320px){
+        margin-left: -45px;
+    }
 }
 
 
@@ -381,6 +447,12 @@ body textarea:required:valid{
     right: 90px;
     .inner{
         left: 90px;
+    }
+    @media only screen and (max-width : 1750px){
+        right: 0;
+        .inner{
+            left: 0;
+        }
     }
 }
 
@@ -410,6 +482,12 @@ body textarea:required:valid{
     img{
         margin-top: -45px;
     }
+    @media only screen and (max-width : 1450px){
+        min-height: 623px;
+        img{
+            margin-top: 0;
+        }
+    }
 }
 
 
@@ -434,6 +512,9 @@ body textarea:required:valid{
     form{
         border: 5px solid #ebf3f6;
     }
+    @media only screen and (max-width : 1750px){
+        padding: 25px;
+    }
 }
 
 .left-img{
@@ -443,6 +524,15 @@ body textarea:required:valid{
         position: absolute;
         left:-60px;
         top: -50px;
+    }
+    @media only screen and (max-width : 1600px){
+        float: left;
+        img{
+            position: relative;
+            width: 100%;
+            top: auto;
+            left: auto;
+        }
     }
 }
 .right-form{
@@ -491,6 +581,16 @@ body textarea:required:valid{
         margin-top: 20px;
 
     }
+    @media only screen and (max-width : 1600px){
+        h2{
+            font-size: 40px;
+        }
+    }
+    @media only screen and (max-width : 1320px){
+        h2{
+            font-size: 35px;
+        }
+    }
 }
 
 
@@ -538,6 +638,9 @@ footer{
                 background-color: transparent;
             }
         }
+    }
+    @media only screen and (max-width : 1750px){
+        padding: 70px 25px;
     }
 }
 .footer-menu{
