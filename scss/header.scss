@@ -1,5 +1,7 @@
 @import "bourbon";
 @import "vars.scss";
+@import "../libs/font-awesome/css/font-awesome.min.css";
+@import "../libs/lightslider/dist/css/lightslider.min.css";
 
 body{
 	font-size: 16px;
@@ -9,6 +11,7 @@ body{
 	font-family: "RobotoRegular", sans-serif;
 	overflow-x: hidden;
 	background-color: #fff;
+    color: #000;
 }
 
 a,button,input,textarea{
@@ -22,6 +25,12 @@ a,button,input,textarea{
 	}
 }
 
+.inner{
+	max-width: 1740px;
+	margin: 0 auto;
+	position: relative;
+}
+
 button{
 	&:hover{
 		cursor: pointer;
@@ -32,8 +41,135 @@ button{
 	display: none;
 }
 
-.wrapper{
-	width: 960px;
-	margin: 0 auto;
-	overflow: hidden;
+
+header{
+	background-image: url("../img/bg-head.jpg");
+	background-position: left;
+	background-repeat: no-repeat;
+	padding-top: 40px;
+	background-size: 97%;
 }
+
+
+.logo{
+	float: left;
+	*{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	p{
+		font-size:20px;
+		line-height: 25px;
+		color: #fff;
+		opacity: 0.6;
+		margin-left: 40px;
+	}
+}
+
+.social{
+	margin-left: 50px;
+	float: left;
+	ul{
+		li{
+			float: left;
+			a{
+				margin: 0 3px;
+				display: block;
+				border: 1px solid rgba(255,255,255, 0.15);
+				border-radius: 120px;
+				width: 55px;
+				height: 55px;
+				text-align: center;
+				padding-top: 8px;
+				color: #fff;
+				font-size:23px;
+				&:hover{
+					background-color: #fff;
+					color: red;
+				}
+			}
+		}
+	}
+}
+
+
+.right-head{
+	float: right;
+
+}
+
+.city{
+	display: inline-block;
+	vertical-align: top;
+	h3{
+		font-size:22px;
+		color: #fff;
+		text-align: right;
+		font-family:FuturaNewBook;
+		line-height: 33px;
+	}
+}
+.popup-but{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 19px;
+	margin-left: 35px;
+	a{
+		color: #fff;
+		font-size:18px;
+		font-family:FuturaNewHeavy;
+		background-color: #ff0920;
+		padding: 14.5px 39px;
+		&:hover{
+			text-decoration: none;
+			border-radius: 10px;
+			background-color: darken(#ff0920,10);
+		}
+	}
+}
+
+.head-menu{
+	margin-top: 35px;
+	display: block;
+	border-top: 1px solid rgba(255,255,255, 0.3);
+	li{
+		float: left;
+		&:first-child{
+			a{
+				margin-left: 0;
+			}
+		}
+	}
+	a{
+		color: #fff;
+		font-size: 26px;
+		font-family:FuturaNewBook;
+		padding-top: 33px;
+		display: block;
+		border-top: 3px solid transparent;
+		position: relative;
+		z-index: 68;
+		margin: 0 34px;
+		&:hover{
+			border-top: 3px solid #ff0920;
+			color: #ff0920;
+			text-decoration: none;
+		}
+	}
+}
+
+
+.head-banner{
+	margin-top: 100px;
+	margin-bottom: 150px;
+	h1{
+		font-size:80px;
+		color: #fff;
+		line-height: 85px;
+		font-family:FuturaNewDemi;
+	}
+	span{
+		color: #ff0920;
+	}
+}
+
