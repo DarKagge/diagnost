@@ -37,6 +37,9 @@ header {
   background-repeat: no-repeat;
   padding-top: 40px;
   background-size: 97%; }
+  @media only screen and (max-width: 1750px) {
+    header {
+      background-size: cover; } }
 
 .logo {
   float: left; }
@@ -68,7 +71,6 @@ header {
       color: #fff;
       font-size: 23px; }
       .social ul li a:hover {
-        background-color: #fff;
         color: red; }
 
 .right-head {
@@ -94,12 +96,11 @@ header {
     font-size: 18px;
     font-family: FuturaNewHeavy;
     background-color: #ff0920;
-    padding: 14.5px 39px; }
+    padding: 14.5px 39px;
+    border: 5px solid #ff0920; }
     .popup-but a:hover {
       text-decoration: none;
-      -webkit-border-radius: 10px;
-      border-radius: 10px;
-      background-color: #d50014; }
+      background-color: transparent; }
 
 .head-menu {
   margin-top: 35px;

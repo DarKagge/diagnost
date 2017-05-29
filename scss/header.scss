@@ -48,6 +48,9 @@ header{
 	background-repeat: no-repeat;
 	padding-top: 40px;
 	background-size: 97%;
+  @media only screen and (max-width : 1750px){
+      background-size: cover;
+  }
 }
 
 
@@ -84,7 +87,6 @@ header{
 				color: #fff;
 				font-size:23px;
 				&:hover{
-					background-color: #fff;
 					color: red;
 				}
 			}
@@ -120,10 +122,10 @@ header{
 		font-family:FuturaNewHeavy;
 		background-color: #ff0920;
 		padding: 14.5px 39px;
+        border: 5px solid #ff0920;
 		&:hover{
 			text-decoration: none;
-			border-radius: 10px;
-			background-color: darken(#ff0920,10);
+			background-color: transparent;
 		}
 	}
 }

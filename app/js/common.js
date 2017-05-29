@@ -110,3 +110,27 @@ $(function() {
 			e.preventDefault();
 			autoplaySlider.goToNextSlide();
 		});
+
+
+
+
+
+
+
+
+
+		var autoplaySlider = $('#adapt').lightSlider({
+			adaptiveHeight:true,
+			item:1,
+			slideMargin:0,
+			controls:false,
+			loop:true
+		});
+		$(".left-arrow-a a").on("click",function (e) {
+			e.preventDefault();
+			autoplaySlider.goToPrevSlide();
+		});
+		$(".right-arrow-a a").on("click",function (e) {
+			e.preventDefault();
+			autoplaySlider.goToNextSlide();
+		});

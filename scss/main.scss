@@ -67,10 +67,13 @@ body textarea:required:valid{
 
 .amenities{
     background-color: #eaf3f6;
-    margin-left: 90px;
+    left: 90px;
     position: relative;
     margin-bottom: 70px;
     padding-bottom: 60px;
+    .inner{
+        right: 90px;
+    }
 }
 
 
@@ -159,9 +162,10 @@ body textarea:required:valid{
 
 .auto-slide{
     background-color: #212425;
-    margin-right: 90px;
+    position: relative;
+    right: 90px;
     .inner{
-        margin-left: 90px;
+        left: 90px;
     }
     .all-title{
         left: -50px;
@@ -250,9 +254,11 @@ body textarea:required:valid{
         }
     }
     .left-arrow-a{
-        background-image: url("../img/arrow-slide-l.png");
-        background-repeat: no-repeat;
-        background-position: center;
+        a{
+            background-image: url("../img/arrow-slide-l.png");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     }
     .right-arrow-a{
         background-image: url("../img/arrow-slide-r.png");
@@ -264,8 +270,13 @@ body textarea:required:valid{
 
 
 .reviews{
-    margin: 107px 0 107px 90px;
+    margin: 107px 0;
     background-color: #ebf3f6;
+    position: relative;
+    left: 90px;
+    .inner{
+        right: 90px;
+    }
     .all-title{
         left: -50px;
     }
@@ -347,11 +358,17 @@ body textarea:required:valid{
         background-image: url("../img/arrow-slider-l.png");
         background-position: center;
         background-repeat: no-repeat;
+        &:hover{
+            background-image: url("../img/arrow-slider-red-l.png");
+        }
     }
     .right-arrow-r{
         background-image: url("../img/arrow-slider-r.png");
         background-position: center;
         background-repeat: no-repeat;
+        &:hover{
+            background-image: url("../img/arrow-slider-red-r.png");
+        }
     }
 }
 
@@ -360,9 +377,10 @@ body textarea:required:valid{
 
 .quest{
     background-color: #ebf3f6;
-    margin-right: 90px;
+    position: relative;
+    right: 90px;
     .inner{
-        margin-left: 90px;
+        left: 90px;
     }
 }
 
