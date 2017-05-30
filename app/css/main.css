@@ -45,11 +45,36 @@ body textarea:required:valid {
   .experience li p {
     color: #000000;
     font-size: 30px;
-    line-height: 35px; }
+    line-height: 35px;
+    font-family: FuturaLight-NormalRegular; }
 
 @media only screen and (max-width: 1750px) {
   .experience li:first-child {
     padding-left: 60px; } }
+
+@media only screen and (max-width: 1500px) {
+  .experience li {
+    padding-left: 25px;
+    padding-top: 30px; }
+    .experience li:first-child {
+      padding-left: 25px; }
+    .experience li h2 {
+      font-size: 40px; }
+    .experience li p {
+      font-size: 25px;
+      line-height: 35px;
+      padding-bottom: 20px; } }
+
+@media only screen and (max-width: 700px) {
+  .experience li {
+    width: 50%;
+    height: auto;
+    padding-top: 15px; }
+    .experience li:nth-child(2n) {
+      border-right: none;
+      border-bottom: 1px solid #dae5e9; }
+    .experience li:nth-child(2n+1) {
+      border-bottom: 1px solid #dae5e9; } }
 
 .amenities {
   background-color: #eaf3f6;
@@ -80,6 +105,10 @@ body textarea:required:valid {
     color: #fff;
     font-size: 50px;
     font-family: FuturaNewHeavy; }
+  @media only screen and (max-width: 991px) {
+    .all-title h2 {
+      font-size: 35px;
+      line-height: 35px; } }
 
 .am-items {
   padding-top: 121px;
@@ -106,6 +135,29 @@ body textarea:required:valid {
     @media only screen and (max-width: 1450px) {
       .am-items li {
         max-width: 600px; } }
+    @media only screen and (max-width: 1231px) {
+      .am-items li {
+        max-width: 500px; } }
+    @media only screen and (max-width: 1031px) {
+      .am-items li {
+        max-width: 400px; }
+        .am-items li .title-item img {
+          height: 300px; }
+        .am-items li .title-item h2 {
+          font-size: 28px;
+          line-height: 30px;
+          left: 21px; }
+        .am-items li .price-am {
+          text-align: center; }
+          .am-items li .price-am a {
+            float: none;
+            margin: 10px auto;
+            max-width: 169px; } }
+    @media only screen and (max-width: 770px) {
+      .am-items li {
+        max-width: 344px; }
+        .am-items li .text-am {
+          padding: 38px 15px; } }
   .am-items .title-item {
     height: 363px;
     position: relative; }
@@ -190,6 +242,17 @@ body textarea:required:valid {
       padding: 0 25px; }
       .auto-slide .lSSlideOuter .lSPager.lSpg {
         left: 55%; } }
+  @media only screen and (max-width: 991px) {
+    .auto-slide .lSSlideOuter .lSPager.lSpg {
+      left: 50%;
+      margin-left: -92px;
+      bottom: 200px; }
+    .auto-slide .slider-auto-inputs {
+      padding: 70px 0;
+      margin-top: 70px; }
+    .auto-slide .arrow-slider-a {
+      text-align: center;
+      padding: 0; } }
 
 .img-slide-auto {
   padding-top: 69px;
@@ -199,6 +262,10 @@ body textarea:required:valid {
   @media only screen and (max-width: 1450px) {
     .img-slide-auto {
       margin-left: 25px; } }
+  @media only screen and (max-width: 991px) {
+    .img-slide-auto {
+      margin-left: 0;
+      padding-top: 137px; } }
 
 .right-text-auto {
   padding-top: 150px;
@@ -212,6 +279,10 @@ body textarea:required:valid {
     font-size: 20px;
     color: #fff;
     font-family: FuturaNewBook; }
+  @media only screen and (max-width: 1450px) {
+    .right-text-auto {
+      padding: 0;
+      text-align: center; } }
 
 .slider-auto-inputs {
   padding-left: 30px;
@@ -257,6 +328,13 @@ body textarea:required:valid {
       left: 0; }
       .reviews .inner {
         right: 0; } }
+  @media only screen and (max-width: 991px) {
+    .reviews {
+      padding: 0 25px;
+      text-align: center;
+      margin: 50px 0; }
+      .reviews .all-title {
+        left: 0; } }
 
 .slider-reviews {
   min-height: 425px; }
@@ -271,6 +349,10 @@ body textarea:required:valid {
     height: 15px; }
   .slider-reviews .lSSlideOuter .lSPager.lSpg > li.active a, .slider-reviews .lSSlideOuter .lSPager.lSpg > li:hover a {
     background-color: #ff0920; }
+  @media only screen and (max-width: 991px) {
+    .slider-reviews .lSSlideOuter .lSPager.lSpg {
+      position: relative;
+      top: -180px; } }
 
 .img-client {
   width: 181px;
@@ -298,7 +380,12 @@ body textarea:required:valid {
 .text-client h3 {
   font-size: 26px;
   padding-top: 15px;
-  color: #000; }
+  color: #000;
+  font-family: FuturaNewDemi; }
+
+@media only screen and (max-width: 991px) {
+  .text-client {
+    text-align: center; } }
 
 .arrow-slider-r {
   padding-top: 48px; }
@@ -328,6 +415,11 @@ body textarea:required:valid {
   @media only screen and (max-width: 1320px) {
     .arrow-slider-r {
       margin-left: -45px; } }
+  @media only screen and (max-width: 991px) {
+    .arrow-slider-r {
+      margin: 0 auto;
+      display: inline-block;
+      padding: 70px 0 30px 0; } }
 
 .quest {
   background-color: #ebf3f6;
@@ -354,6 +446,9 @@ body textarea:required:valid {
     font-size: 20px;
     font-family: FuturaNewBook;
     padding-top: 20px; }
+  @media only screen and (max-width: 1320px) {
+    .left-q-d {
+      padding-left: 25px; } }
 
 .right-foto-dima {
   float: left;
@@ -370,6 +465,15 @@ body textarea:required:valid {
       .right-foto-dima img {
         margin-top: 0;
         width: 100%; } }
+  @media only screen and (max-width: 1320px) {
+    .right-foto-dima img {
+      margin-top: 49px; } }
+  @media only screen and (max-width: 1222px) {
+    .right-foto-dima {
+      min-height: 697px;
+      position: relative; }
+      .right-foto-dima img {
+        margin-top: 79px; } }
 
 .name-d {
   margin-top: 20px;
@@ -405,6 +509,10 @@ body textarea:required:valid {
         width: 100%;
         top: auto;
         left: auto; } }
+  @media only screen and (max-width: 991px) {
+    .left-img img {
+      margin-top: 40px;
+      margin-left: -40px; } }
 
 .right-form {
   width: 50%;
@@ -463,6 +571,10 @@ body textarea:required:valid {
   @media only screen and (max-width: 1320px) {
     .right-form h2 {
       font-size: 35px; } }
+  @media only screen and (max-width: 991px) {
+    .right-form h2 {
+      font-size: 29px;
+      line-height: 30px; } }
 
 footer {
   background-color: #212425;

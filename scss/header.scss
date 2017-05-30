@@ -53,6 +53,10 @@ header{
       background-size: cover;
       padding: 25px;
   }
+  @media only screen and (max-width : 700px){
+    padding: 25px 15px;
+
+  }
 
 }
 
@@ -76,6 +80,9 @@ header{
        margin-left: 0;
        margin-top: 14px;
      }
+  }
+  @media only screen and (max-width : 700px){
+    float: none;
   }
 }
 
@@ -122,6 +129,10 @@ header{
 
 .right-head{
 	float: right;
+  @media only screen and (max-width : 700px){
+    float: none;
+    text-align: center;
+  }
 
 }
 
@@ -139,6 +150,9 @@ header{
     h3{
       font-size: 18px;
     }
+  }
+  @media only screen and (max-width : 700px){
+    margin-top: 25px;
   }
 }
 .popup-but{
@@ -164,6 +178,12 @@ header{
 	@media only screen and (max-width : 991px){
 		display: block;
 	}
+  @media only screen and (max-width : 700px){
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    margin-left: -127.5px;
+  }
 }
 
 .head-menu{
@@ -194,11 +214,17 @@ header{
 			text-decoration: none;
 		}
 	}
+    @media only screen and (max-width : 1116px){
+      a{
+        margin: 0 20px;
+      }
+    }
 	@media only screen and (max-width : 991px){
 		position: absolute;
 		top: -250px;
 		right: 50px;
 	}
+
 }
 
 

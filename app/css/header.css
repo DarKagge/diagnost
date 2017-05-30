@@ -42,6 +42,9 @@ header {
     header {
       background-size: cover;
       padding: 25px; } }
+  @media only screen and (max-width: 700px) {
+    header {
+      padding: 25px 15px; } }
 
 .logo {
   float: left; }
@@ -59,6 +62,9 @@ header {
       display: block;
       margin-left: 0;
       margin-top: 14px; } }
+  @media only screen and (max-width: 700px) {
+    .logo {
+      float: none; } }
 
 .social {
   margin-left: 50px;
@@ -97,6 +103,10 @@ header {
 
 .right-head {
   float: right; }
+  @media only screen and (max-width: 700px) {
+    .right-head {
+      float: none;
+      text-align: center; } }
 
 .city {
   display: inline-block;
@@ -110,6 +120,9 @@ header {
   @media only screen and (max-width: 1171px) {
     .city h3 {
       font-size: 18px; } }
+  @media only screen and (max-width: 700px) {
+    .city {
+      margin-top: 25px; } }
 
 .popup-but {
   display: inline-block;
@@ -132,6 +145,12 @@ header {
   @media only screen and (max-width: 991px) {
     .popup-but {
       display: block; } }
+  @media only screen and (max-width: 700px) {
+    .popup-but {
+      position: absolute;
+      bottom: -100px;
+      left: 50%;
+      margin-left: -127.5px; } }
 
 .head-menu {
   margin-top: 35px;
@@ -155,6 +174,9 @@ header {
       border-top: 3px solid #ff0920;
       color: #ff0920;
       text-decoration: none; }
+  @media only screen and (max-width: 1116px) {
+    .head-menu a {
+      margin: 0 20px; } }
   @media only screen and (max-width: 991px) {
     .head-menu {
       position: absolute;
