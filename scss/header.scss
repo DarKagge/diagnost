@@ -84,6 +84,18 @@ header{
   @media only screen and (max-width : 700px){
     float: none;
   }
+  @media only screen and (max-width : 500px){
+    max-width: 266px;
+    img{
+      max-width: 206px;
+    }
+    p{
+      font-size: 18px;
+      br{
+        display: none;
+      }
+    }
+  }
 }
 
 .social{
@@ -220,9 +232,7 @@ header{
       }
     }
 	@media only screen and (max-width : 991px){
-		position: absolute;
-		top: -250px;
-		right: 50px;
+		display: none;
 	}
 
 }
@@ -246,6 +256,16 @@ header{
 			line-height: 40px;
 		}
 	}
+    @media only screen and (max-width : 500px){
+      h1{
+        font-size: 28px;
+        line-height: 30px;
+        br{
+          display: none;
+        }
+      }
+    }
+
 }
 
 

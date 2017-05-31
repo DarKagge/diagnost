@@ -65,6 +65,15 @@ header {
   @media only screen and (max-width: 700px) {
     .logo {
       float: none; } }
+  @media only screen and (max-width: 500px) {
+    .logo {
+      max-width: 266px; }
+      .logo img {
+        max-width: 206px; }
+      .logo p {
+        font-size: 18px; }
+        .logo p br {
+          display: none; } }
 
 .social {
   margin-left: 50px;
@@ -179,9 +188,7 @@ header {
       margin: 0 20px; } }
   @media only screen and (max-width: 991px) {
     .head-menu {
-      position: absolute;
-      top: -250px;
-      right: 50px; } }
+      display: none; } }
 
 .head-banner {
   margin-top: 100px;
@@ -197,3 +204,9 @@ header {
     .head-banner h1 {
       font-size: 38px;
       line-height: 40px; } }
+  @media only screen and (max-width: 500px) {
+    .head-banner h1 {
+      font-size: 28px;
+      line-height: 30px; }
+      .head-banner h1 br {
+        display: none; } }

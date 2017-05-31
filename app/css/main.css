@@ -76,6 +76,12 @@ body textarea:required:valid {
     .experience li:nth-child(2n+1) {
       border-bottom: 1px solid #dae5e9; } }
 
+@media only screen and (max-width: 512px) {
+  .experience li:nth-child(3n) {
+    min-height: 280px; }
+  .experience li:nth-child(4n) {
+    min-height: 280px; } }
+
 .amenities {
   background-color: #eaf3f6;
   left: 90px;
@@ -109,6 +115,18 @@ body textarea:required:valid {
     .all-title h2 {
       font-size: 35px;
       line-height: 35px; } }
+  @media only screen and (max-width: 512px) {
+    .all-title {
+      padding: 20px 25px; }
+      .all-title h2 {
+        padding-top: 15px; }
+      .all-title .red-line {
+        margin-left: 0; } }
+  @media only screen and (max-width: 380px) {
+    .all-title {
+      position: relative;
+      max-width: 345px;
+      margin: 0 auto; } }
 
 .am-items {
   padding-top: 121px;
@@ -158,6 +176,13 @@ body textarea:required:valid {
         max-width: 344px; }
         .am-items li .text-am {
           padding: 38px 15px; } }
+    @media only screen and (max-width: 719px) {
+      .am-items li {
+        margin: 10px; }
+        .am-items li:nth-child(2n) {
+          margin: 10px; }
+        .am-items li:nth-child(2n+1) {
+          margin: 10px; } }
   .am-items .title-item {
     height: 363px;
     position: relative; }
@@ -253,6 +278,9 @@ body textarea:required:valid {
     .auto-slide .arrow-slider-a {
       text-align: center;
       padding: 0; } }
+  @media only screen and (max-width: 512px) {
+    .auto-slide .all-title h2 {
+      line-height: 35px; } }
 
 .img-slide-auto {
   padding-top: 69px;
@@ -266,6 +294,9 @@ body textarea:required:valid {
     .img-slide-auto {
       margin-left: 0;
       padding-top: 137px; } }
+  @media only screen and (max-width: 380px) {
+    .img-slide-auto {
+      padding-top: 0px; } }
 
 .right-text-auto {
   padding-top: 150px;
@@ -432,6 +463,9 @@ body textarea:required:valid {
       right: 0; }
       .quest .inner {
         left: 0; } }
+  @media only screen and (max-width: 700px) {
+    .quest {
+      padding: 0 15px; } }
 
 .left-q-d {
   float: left;
@@ -449,6 +483,11 @@ body textarea:required:valid {
   @media only screen and (max-width: 1320px) {
     .left-q-d {
       padding-left: 25px; } }
+  @media only screen and (max-width: 700px) {
+    .left-q-d {
+      float: none;
+      width: 100%;
+      padding-left: 0; } }
 
 .right-foto-dima {
   float: left;
@@ -474,6 +513,10 @@ body textarea:required:valid {
       position: relative; }
       .right-foto-dima img {
         margin-top: 79px; } }
+  @media only screen and (max-width: 1222px) {
+    .right-foto-dima {
+      float: none;
+      width: 100%; } }
 
 .name-d {
   margin-top: 20px;
@@ -485,6 +528,9 @@ body textarea:required:valid {
   .name-d p {
     padding-top: 0px;
     color: #414748; }
+  @media only screen and (max-width: 700px) {
+    .name-d {
+      text-align: center; } }
 
 .forma {
   margin: 90px 0; }
@@ -513,6 +559,17 @@ body textarea:required:valid {
     .left-img img {
       margin-top: 40px;
       margin-left: -40px; } }
+  @media only screen and (max-width: 700px) {
+    .left-img {
+      width: 100%;
+      float: none;
+      text-align: center; }
+      .left-img img {
+        margin-top: -25px; } }
+  @media only screen and (max-width: 380px) {
+    .left-img img {
+      margin-left: -20px;
+      width: 110%; } }
 
 .right-form {
   width: 50%;
@@ -575,6 +632,20 @@ body textarea:required:valid {
     .right-form h2 {
       font-size: 29px;
       line-height: 30px; } }
+  @media only screen and (max-width: 700px) {
+    .right-form {
+      width: 100%;
+      float: none;
+      padding: 38px 13px; }
+      .right-form h2 {
+        font-size: 28px; }
+        .right-form h2 br {
+          display: none; } }
+  @media only screen and (max-width: 380px) {
+    .right-form h2 {
+      font-size: 25px; }
+    .right-form p {
+      font-size: 24px; } }
 
 footer {
   background-color: #212425;
@@ -606,6 +677,30 @@ footer {
   @media only screen and (max-width: 1750px) {
     footer {
       padding: 70px 25px; } }
+  @media only screen and (max-width: 1686px) {
+    footer .social {
+      float: right; }
+    footer .right-head {
+      margin-top: 15px; } }
+  @media only screen and (max-width: 1109px) {
+    footer .logo {
+      float: none;
+      display: block; }
+      footer .logo p {
+        display: inline; }
+      footer .logo tt {
+        position: absolute;
+        bottom: 0px;
+        left: 0; }
+    footer .footer-menu {
+      margin-left: 0; }
+    footer .social {
+      margin-top: -60px; }
+    footer .city {
+      display: block; } }
+  @media only screen and (max-width: 1096px) {
+    footer .social {
+      display: block; } }
 
 .footer-menu {
   float: left;
@@ -617,30 +712,12 @@ footer {
       margin: 15px 20px;
       font-size: 20px;
       color: #7d868b; }
+  @media only screen and (max-width: 1726px) {
+    .footer-menu {
+      margin-left: 20px; } }
 
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-  .wrapper {
-    width: auto; }
-  .pad {
-    padding: 50px 5px !important; }
-  footer {
-    text-align: center; }
-    footer .wrapper {
-      width: auto; }
-    footer ul {
-      float: none;
-      display: inline-block;
-      text-align: center; }
-      footer ul li {
-        margin-bottom: 10px;
-        margin-right: 0;
-        float: none; }
-    footer .gs {
-      float: none;
-      display: block; } }
-
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
