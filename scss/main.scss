@@ -136,7 +136,7 @@ body textarea:required:valid{
 
 .all-title{
     top: -29px;
-    left: 0px;
+    left: -3px;
     position: absolute;
     background-color: #2d2d2d;
     padding: 20px 90px;
@@ -919,6 +919,66 @@ footer{
             display: block;
         }
     }
+    @media only screen and (max-width : 991px){
+        .logo{
+            tt{
+                bottom: -55px;
+            }
+            span{
+                display: block;
+            }
+        }
+    }
+    @media only screen and (max-width : 700px){
+        padding-bottom: 125px;
+        .social{
+            float: none;
+            margin-left: 0;
+            margin-top: 0;
+            text-align: center;
+            ul{
+                display: inline-block;
+            }
+        }
+        .footer-menu{
+            float: none;
+        }
+        .city{
+            h3{
+                text-align: center;
+            }
+        }
+        .popup-but{
+            position: relative;
+            left: auto;
+            margin-left: 0;
+            bottom: auto;
+            margin-top: 40px;
+        }
+        .logo{
+            tt{
+                text-align: center;
+                bottom: -95px;
+                left: 50%;
+                margin-left: -103.5px;
+            }
+        }
+    }
+    @media only screen and (max-width : 405px){
+        padding: 70px 15px 125px 15px;
+        .footer-menu {
+            li{
+                width: 150px;
+            }
+        }
+    }
+    @media only screen and (max-width : 329px){
+        .footer-menu {
+            li{
+                width: 140px;
+            }
+        }
+    }
 
 }
 .footer-menu{
@@ -934,10 +994,100 @@ footer{
 
         }
     }
-    @media only screen and (max-width : 1726px){
+    @media only screen and (max-width : 1750px){
             margin-left: 20px;
     }
+    @media only screen and (max-width : 991px){
+        margin-left:0;
+        max-width: 360px;
+        margin-top: 10px;
+        li{
+            width: 178px;
+            a{
+                margin: 10px 0;
+            }
+        }
+    }
+}
 
+.eror{
+    background-color:#eaf3f6;
+    left: 90px;
+    position: relative;
+    margin-bottom: 90px;
+    .inner{
+        right: 90px;
+    }
+    @media only screen and (max-width : 1750px){
+        left: 0px;
+        .inner{
+            right: 0px;
+        }
+    }
+  @media only screen and (max-width : 1300px){
+    padding: 0 25px;
+  }
+}
+
+
+.breadcrumbs{
+    margin: 50px 90px;
+    .active{
+        color: #7d868b;
+    }
+    ul{
+        li{
+            float: left;
+            &:first-child{
+                a{
+                    margin-left: 0;
+                }
+            }
+            &:last-child{
+                a{
+                    &:after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    a{
+        font-size: 20px;
+        font-family:FuturaNewBook;
+        color: #bbc0c4;
+        margin: 0 15px;
+        display: block;
+        position: relative;
+        &:after{
+            position: absolute;
+            right: -20px;
+            top: 0;
+            content: '/';
+            font-size:20px;
+            color: #bbc0c4;
+        }
+    }
+}
+
+.txt-404{
+    text-align: center;
+    padding: 150px 90px;
+    h2{
+        font-size: 46px;
+        font-family:FuturaNewDemi;
+        color: #3e3e3e;
+    }
+    p{
+        font-size: 28px;
+        text-align: left;
+        font-family:FuturaNewBook;
+    }
+  @media only screen and (max-width : 991px){
+    h2{
+      display: none;
+    }
+  }
 }
 //ALWAYS END
 @import "media.scss";

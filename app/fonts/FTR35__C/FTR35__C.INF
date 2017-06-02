@@ -1,0 +1,26 @@
+FontName (FuturaLightC)
+FullName (Futura Light Cyrillic)
+ApplName (FuturaLightC)
+FamilyName (FuturaLightC)
+version (001.000)
+isFixedPitch false
+CharacterSet (cyrillicreg.cs)
+Encoding (cyrillic.enc)
+ItalicAngle   0
+CapHeight 667
+UnderlinePosition -100
+UnderlineThickness 50
+StemWidth 40
+Serif false
+Pi true
+SuperiorBaseline 267
+MSMenuName (FuturaLightC)
+VPMenuName (FuturaLightC)
+WORDMenuName (FuturaLightC)
+VPTypefaceID 0
+VPStyle (N)
+PCFileNamePrefix (FTR35__C)
+PCLTypefaceID 67
+PCLStrokeWeight 0
+PCLStyle 0
+PCLSymbolSet 9R

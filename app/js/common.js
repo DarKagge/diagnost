@@ -113,7 +113,16 @@ $(function() {
 
 
 
-
+	$('.hamburger').on('click',function(){
+		$(this).toggleClass('is-active');
+		$(".head-menu").toggleClass('is-active');
+	});
+	$(document).on("click",function(event){
+		if( $(event.target).closest(".head-menu,.hamburger").length )return;
+		$('.hamburger').removeClass('is-active');
+		$(".head-menu").removeClass('is-active');
+		event.stopPropagation();
+	});
 
 
 
