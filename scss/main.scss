@@ -1033,7 +1033,7 @@ footer{
 .breadcrumbs{
     margin: 50px 90px;
     .active{
-        color: #7d868b;
+        color: #bbc0c4;
     }
     ul{
         li{
@@ -1055,7 +1055,7 @@ footer{
     a{
         font-size: 20px;
         font-family:FuturaNewBook;
-        color: #bbc0c4;
+        color: #7d868b;
         margin: 0 15px;
         display: block;
         position: relative;
@@ -1070,6 +1070,11 @@ footer{
     }
     @media only screen and (max-width : 991px){
         margin: 50px 25px;
+    }
+    @media only screen and (max-width : 792px){
+        a{
+            font-size: 18px;
+        }
     }
 
 }
@@ -1297,6 +1302,57 @@ footer{
     }
 }
 
+
+.in-articles-text{
+    padding: 125px 90px 95px 90px;
+    p{
+        font-size:28px;
+        font-family:FuturaNewBook;
+        margin: 20px 0;
+        color: #414748;
+    }
+    h3{
+        font-size:28px;
+        color: #414748;
+        font-family:FuturaNewDemi;
+        margin: 25px 0;
+    }
+    img{
+        width: 100%;
+    }
+    @media only screen and (max-width : 991px){
+        padding: 125px 0px 95px 0px;
+        p{
+            font-size: 18px;
+        }
+        h3{
+            font-size: 18px;
+        }
+    }
+}
+
+
+.in-article{
+    @media only screen and (max-width : 1450px){
+        .all-title{
+            padding: 20px 25px;
+            h2{
+                font-size: 35px;
+            }
+        }
+    }
+    @media only screen and (max-width : 991px){
+        .all-title{
+            max-width: 505px;
+        }
+    }
+    @media only screen and (max-width : 550px){
+        .all-title{
+            position: relative;
+            
+        }
+    }
+}
 //ALWAYS END
 @import "media.scss";
 @import "sketches.scss";
