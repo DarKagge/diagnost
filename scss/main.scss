@@ -1068,6 +1068,10 @@ footer{
             color: #bbc0c4;
         }
     }
+    @media only screen and (max-width : 991px){
+        margin: 50px 25px;
+    }
+
 }
 
 .txt-404{
@@ -1088,7 +1092,211 @@ footer{
       display: none;
     }
   }
+    @media only screen and (max-width : 700px){
+        padding: 70px 25px;
+    }
+    @media only screen and (max-width : 400px){
+        padding: 50px 10px;
+    }
 }
+
+
+
+
+
+
+.article{
+    background-color: #eaf3f6;
+    position: relative;
+    left: 90px;
+    margin-bottom: 90px;
+    .inner{
+        right: 90px;
+    }
+    @media only screen and (max-width : 1750px){
+        left: 0px;
+        .inner{
+            right: 0px;
+            padding: 0 25px;
+        }
+        .all-title{
+            left: auto;
+        }
+    }
+    @media only screen and (max-width : 500px){
+        .inner{
+            padding: 0 15px;
+        }
+    }
+}
+
+.section-a{
+    padding: 130px 0 20px 0;
+    li{
+        margin: 40px 0;
+        padding: 0 90px;
+        &:hover{
+            .text-art{
+                h2{
+                    color: #ff0920;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width : 1320px){
+        li{
+            padding: 0;
+        }
+    }
+    @media only screen and (max-width : 725px){
+        padding-top: 30px;
+    }
+}
+
+.foto-art{
+    display: inline-block;
+    vertical-align: top;
+    width: 19.4%;
+    @media only screen and (max-width : 1750px){
+        width: 20%;
+    }
+    @media only screen and (max-width : 1450px){
+        width: 300px;
+    }
+    @media only screen and (max-width : 991px){
+        width: 50%;
+        img{
+            width: 100%;
+        }
+
+    }
+    @media only screen and (max-width : 725px){
+        width: 100%;
+    }
+
+}
+.text-art{
+    display: inline-block;
+    border-bottom: 1px solid #d7e2e7;
+    margin-left: 60px;
+    width: 76.5%;
+    h2{
+        color: #000000;
+        font-size:36px;
+        line-height: 36px;
+        font-family:FuturaNewDemi;
+    }
+    p{
+        color: #414748;
+        font-size: 28px;
+        font-family:FuturaNewBook;
+        max-height: 130px;
+        margin-top: 30px;
+        overflow-y: hidden;
+    }
+    a{
+        border: 5px solid #fff;
+        color: #414748;
+        font-family:FuturaNewDemi;
+        font-size:20px;
+        display: inline-block;
+        padding: 5px 31px;
+        margin: 25px 0;
+        &:hover{
+            color: #ff0920;
+            text-decoration: none;
+        }
+    }
+    @media only screen and (max-width : 1750px){
+        width: 75%;
+    }
+    @media only screen and (max-width : 1450px){
+        width: 69%;
+
+    }
+    @media only screen and (max-width : 1224px){
+        width: 60%;
+        border-bottom: none;
+        p{
+            font-size: 18px;
+            max-height: 117px;
+        }
+    }
+    @media only screen and (max-width : 991px){
+        width: 49%;
+        margin: 0;
+        padding: 0 30px;
+        h2{
+            font-size: 28px;
+            letter-spacing: -0.2px;
+        }
+        p{
+            max-height: 135px;
+
+        }
+    }
+    @media only screen and (max-width : 780px){
+        p{
+            max-height: 160px;
+        }
+    }
+    @media only screen and (max-width : 725px){
+        width: 100%;
+
+        padding: 30px 0;
+    }
+}
+
+
+.list-section-a{
+    text-align: center;
+    padding: 35px 0;
+    .active{
+            color: #ff0920;
+    }
+    ul{
+        display: inline-block;
+    }
+    li{
+        float: left;
+        &:first-child{
+            a{
+                background-image: url("../img/arrow-article.png");
+
+            }
+        }
+        &:last-child{
+            a{
+                background-image: url("../img/arrow-article1.png");
+            }
+        }
+    }
+    a{
+        border: 5px solid #cddadf;
+        font-size:28px;
+        line-height: 72px;
+        color: #414748;
+        display: block;
+        font-family:FuturaNewBook;
+        width: 85px;
+        height: 85px;
+        margin: 0 7.5px;
+        background-position: center;
+        background-repeat: no-repeat;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    @media only screen and (max-width : 991px){
+        a{
+            width: 50px;
+            height: 50px;
+            line-height: 40px;
+            font-size: 20px;
+        }
+    }
+}
+
 //ALWAYS END
 @import "media.scss";
 @import "sketches.scss";
