@@ -57,6 +57,12 @@ header{
     padding: 25px 15px;
 
   }
+	@media only screen and (max-width : 500px){
+		padding: 25px 0;
+		.inner{
+			padding: 0 15px;
+		}
+	}
 
 }
 
@@ -202,6 +208,9 @@ header{
 	margin-top: 35px;
 	display: block;
 	border-top: 1px solid rgba(255,255,255, 0.3);
+	.social{
+		display: none;
+	}
 	li{
 		float: left;
 		&:first-child{
@@ -235,29 +244,45 @@ header{
 		display: none;
         position: absolute;
         max-width: 500px;
+		z-index: 69;
         left: 100%;
-        top: 0px;
+        top: -25px;
         margin: 0;
-        background-color: #fff;
+        background-color: rgba(17,23,29, 0.98);
         border: none;
         width: 100%;
         ul{
+			padding-top: 50px;
           li{
-            text-align: center;
             float: none;
             a{
-              color: #000;
-              padding: 15px 0;
+              color: #fff;
+              padding: 15px 30px;
               margin: 0;
             }
           }
         }
+		.social{
+			display: block;
+			margin: 0px 25px;
+			padding-bottom: 80px;
+			float: right;
+			ul{
+				padding-top: 0;
+			}
+			li{
+				float: left;
+				a{
+					padding: 9px 0 0 0;
+				}
+			}
+		}
 	}
     @media only screen and (max-width : 550px){
       max-width: 350px;
     }
-    @media only screen and (max-width : 405px){
-      max-width: 250px;
+    @media only screen and (max-width : 480px){
+      max-width: 500px;
     }
 }
 
@@ -299,16 +324,20 @@ header{
   position: absolute;
   right: -10px;
   top: -5px;
+	z-index: 70;
 }
 
 .head-menu.is-active{
   left: -25px;
   display: block;
+	@media only screen and (max-width : 500px){
+		left: 0;
+	}
 }
 
 
 $hamburger-hover-opacity: 1;
-$hamburger-types: (arrow);
+$hamburger-types: (spin);
 $hamburger-layer-color: #fff;
 
 @import "../app/libs/css-hamburgers/_sass/hamburgers/hamburgers.scss";
