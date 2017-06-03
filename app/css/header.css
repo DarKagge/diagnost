@@ -41,6 +41,9 @@ header {
     header {
       background-size: cover;
       padding: 25px; } }
+  @media only screen and (max-width: 991px) {
+    header {
+      background-position: center; } }
   @media only screen and (max-width: 700px) {
     header {
       padding: 25px 15px; } }
@@ -241,9 +244,11 @@ header {
   .head-banner span {
     color: #ff0920; }
   @media only screen and (max-width: 991px) {
-    .head-banner h1 {
-      font-size: 38px;
-      line-height: 40px; } }
+    .head-banner {
+      margin-top: 70px; }
+      .head-banner h1 {
+        font-size: 38px;
+        line-height: 40px; } }
   @media only screen and (max-width: 500px) {
     .head-banner h1 {
       font-size: 28px;
@@ -263,6 +268,21 @@ header {
   @media only screen and (max-width: 500px) {
     .head-menu.is-active {
       left: 0; } }
+
+body .hamburger-box {
+  width: 25px; }
+
+body .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 25px;
+  height: 2px; }
+
+body .hamburger-inner::before {
+  width: 25px;
+  height: 2px; }
+
+body .hamburger-inner::after {
+  width: 25px;
+  height: 2px; }
 
 /*!
  * Hamburgers
