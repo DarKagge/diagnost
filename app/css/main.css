@@ -77,10 +77,20 @@ body textarea:required:valid {
       border-bottom: 1px solid #dae5e9; } }
 
 @media only screen and (max-width: 512px) {
-  .experience li:nth-child(3n) {
-    min-height: 280px; }
-  .experience li:nth-child(4n) {
-    min-height: 280px; } }
+  .experience li {
+    padding-left: 15px; }
+    .experience li:first-child {
+      padding-left: 15px; }
+    .experience li:nth-child(3n) {
+      min-height: 280px; }
+    .experience li:nth-child(4n) {
+      min-height: 280px; } }
+
+@media only screen and (max-width: 383px) {
+  .experience li {
+    height: 184px; }
+    .experience li p {
+      line-height: 29px; } }
 
 .amenities {
   background-color: #eaf3f6;
@@ -95,6 +105,9 @@ body textarea:required:valid {
       left: 0; }
       .amenities .inner {
         right: 0; } }
+  @media only screen and (max-width: 400px) {
+    .amenities .inner {
+      padding: 0 15px; } }
 
 .all-title {
   top: -29px;
@@ -122,6 +135,9 @@ body textarea:required:valid {
         padding-top: 15px; }
       .all-title .red-line {
         margin-left: 0; } }
+  @media only screen and (max-width: 400px) {
+    .all-title {
+      position: relative; } }
   @media only screen and (max-width: 380px) {
     .all-title {
       position: relative;
@@ -143,6 +159,9 @@ body textarea:required:valid {
       font-family: FuturaNewBook; }
     .am-items li .text-am {
       padding: 38px 65px 38px 50px; }
+      @media only screen and (max-width: 991px) {
+        .am-items li .text-am {
+          padding-top: 20px; } }
     @media only screen and (max-width: 1750px) {
       .am-items li {
         margin: 29.5px 14px; }
@@ -173,9 +192,9 @@ body textarea:required:valid {
             max-width: 169px; } }
     @media only screen and (max-width: 770px) {
       .am-items li {
-        max-width: 344px; }
+        max-width: 345px; }
         .am-items li .text-am {
-          padding: 38px 15px; } }
+          padding: 20px 15px; } }
     @media only screen and (max-width: 719px) {
       .am-items li {
         margin: 10px; }
@@ -199,6 +218,9 @@ body textarea:required:valid {
     @media only screen and (max-width: 1450px) {
       .am-items .title-item {
         height: auto; } }
+  @media only screen and (max-width: 400px) {
+    .am-items {
+      padding-top: 0px; } }
 
 .price-am {
   margin-top: 35px; }
@@ -236,6 +258,9 @@ body textarea:required:valid {
     @media only screen and (max-width: 1320px) {
       .auto-slide .all-title {
         left: 0; } }
+    @media only screen and (max-width: 500px) {
+      .auto-slide .all-title {
+        position: relative; } }
   .auto-slide .lSSlideOuter .lSPager.lSpg {
     position: absolute;
     bottom: 150px;
@@ -268,16 +293,18 @@ body textarea:required:valid {
       .auto-slide .lSSlideOuter .lSPager.lSpg {
         left: 55%; } }
   @media only screen and (max-width: 991px) {
-    .auto-slide .lSSlideOuter .lSPager.lSpg {
-      left: 50%;
-      margin-left: -92px;
-      bottom: 200px; }
-    .auto-slide .slider-auto-inputs {
-      padding: 70px 0;
-      margin-top: 70px; }
-    .auto-slide .arrow-slider-a {
-      text-align: center;
-      padding: 0; } }
+    .auto-slide {
+      padding: 0 15px; }
+      .auto-slide .lSSlideOuter .lSPager.lSpg {
+        left: 50%;
+        margin-left: -92px;
+        bottom: 200px; }
+      .auto-slide .slider-auto-inputs {
+        padding: 70px 0;
+        margin-top: 70px; }
+      .auto-slide .arrow-slider-a {
+        text-align: center;
+        padding: 0; } }
   @media only screen and (max-width: 512px) {
     .auto-slide .all-title h2 {
       line-height: 35px; } }
@@ -294,7 +321,7 @@ body textarea:required:valid {
     .img-slide-auto {
       margin-left: 0;
       padding-top: 137px; } }
-  @media only screen and (max-width: 380px) {
+  @media only screen and (max-width: 500px) {
     .img-slide-auto {
       padding-top: 0px; } }
 
@@ -312,8 +339,16 @@ body textarea:required:valid {
     font-family: FuturaNewBook; }
   @media only screen and (max-width: 1450px) {
     .right-text-auto {
-      padding: 0;
+      padding: 135px 0 0 0;
       text-align: center; } }
+  @media only screen and (max-width: 991px) {
+    .right-text-auto {
+      padding-top: 25px; } }
+  @media only screen and (max-width: 500px) {
+    .right-text-auto {
+      text-align: left; }
+      .right-text-auto h2 {
+        font-size: 28px; } }
 
 .slider-auto-inputs {
   padding-left: 30px;
@@ -372,6 +407,9 @@ body textarea:required:valid {
   .slider-reviews li {
     position: relative;
     padding-top: 130px; }
+    @media only screen and (max-width: 400px) {
+      .slider-reviews li {
+        padding-top: 0; } }
   .slider-reviews ul {
     height: auto !important; }
   .slider-reviews .lSSlideOuter .lSPager.lSpg > li a {
@@ -483,11 +521,11 @@ body textarea:required:valid {
   @media only screen and (max-width: 1320px) {
     .left-q-d {
       padding-left: 25px; } }
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 780px) {
     .left-q-d {
       float: none;
       width: 100%;
-      padding-left: 0; } }
+      padding: 0 15px; } }
 
 .right-foto-dima {
   float: left;
@@ -495,7 +533,8 @@ body textarea:required:valid {
   background-image: url("../img/bg-wall.png");
   background-position: center;
   background-size: cover;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   .right-foto-dima img {
     margin-top: -45px; }
   @media only screen and (max-width: 1450px) {
@@ -512,11 +551,41 @@ body textarea:required:valid {
       min-height: 697px;
       position: relative; }
       .right-foto-dima img {
-        margin-top: 79px; } }
-  @media only screen and (max-width: 1222px) {
+        margin-top: 0px;
+        position: absolute;
+        bottom: 0;
+        left: 0; } }
+  @media only screen and (max-width: 1162px) {
+    .right-foto-dima {
+      min-height: 729px; } }
+  @media only screen and (max-width: 978px) {
+    .right-foto-dima {
+      min-height: 761px; } }
+  @media only screen and (max-width: 921px) {
+    .right-foto-dima {
+      min-height: 793px; } }
+  @media only screen and (max-width: 857px) {
+    .right-foto-dima {
+      min-height: 825px; }
+      .right-foto-dima img {
+        top: 25%; } }
+  @media only screen and (max-width: 831px) {
+    .right-foto-dima {
+      min-height: 857px; } }
+  @media only screen and (max-width: 813px) {
+    .right-foto-dima {
+      min-height: 889px; } }
+  @media only screen and (max-width: 780px) {
     .right-foto-dima {
       float: none;
-      width: 100%; } }
+      min-height: auto;
+      text-align: center;
+      width: 100%; }
+      .right-foto-dima img {
+        position: relative;
+        top: auto;
+        left: auto;
+        bottom: auto; } }
 
 .name-d {
   margin-top: 20px;

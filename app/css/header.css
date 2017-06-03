@@ -166,7 +166,9 @@ header {
       position: absolute;
       bottom: -100px;
       left: 50%;
-      margin-left: -127.5px; } }
+      margin-left: -127.5px; }
+      .popup-but a {
+        padding: 8.5px 39px; } }
 
 .head-menu {
   margin-top: 35px;
@@ -258,9 +260,12 @@ header {
 
 .hamburger {
   position: absolute;
-  right: -10px;
+  right: -15px;
   top: -5px;
   z-index: 70; }
+  @media only screen and (max-width: 500px) {
+    .hamburger {
+      right: 0; } }
 
 .head-menu.is-active {
   left: -25px;

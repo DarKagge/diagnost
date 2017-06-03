@@ -105,11 +105,23 @@ body textarea:required:valid{
     }
     @media only screen and (max-width : 512px){
         li{
+            padding-left: 15px;
+            &:first-child{
+                padding-left: 15px;
+            }
             &:nth-child(3n){
                 min-height: 280px;
             }
             &:nth-child(4n){
                 min-height: 280px;
+            }
+        }
+    }
+    @media only screen and (max-width : 383px){
+        li{
+            height: 184px;
+            p{
+                line-height: 29px;
             }
         }
     }
@@ -129,6 +141,11 @@ body textarea:required:valid{
         left: 0;
         .inner{
             right: 0;
+        }
+    }
+    @media only screen and (max-width : 400px){
+        .inner{
+            padding: 0 15px;
         }
     }
 }
@@ -167,6 +184,9 @@ body textarea:required:valid{
         }
 
     }
+    @media only screen and (max-width : 400px){
+        position: relative;
+    }
     @media only screen and (max-width : 380px){
         position: relative;
         max-width: 345px;
@@ -191,6 +211,9 @@ body textarea:required:valid{
         }
         .text-am{
             padding: 38px 65px 38px 50px;
+            @media only screen and (max-width : 991px){
+                padding-top: 20px;
+            }
         }
         @media only screen and (max-width : 1750px){
             margin: 29.5px 14px;
@@ -228,10 +251,11 @@ body textarea:required:valid{
                 }
             }
         }
+
         @media only screen and (max-width : 770px){
-            max-width: 344px;
+            max-width: 345px;
             .text-am{
-                padding: 38px 15px;
+                padding: 20px 15px;
             }
         }
         @media only screen and (max-width : 719px){
@@ -244,6 +268,8 @@ body textarea:required:valid{
             }
 
         }
+
+
     }
     .title-item{
         height: 363px;
@@ -265,7 +291,9 @@ body textarea:required:valid{
         }
     }
 
-
+    @media only screen and (max-width : 400px){
+        padding-top: 0px;
+    }
 }
 
 
@@ -313,6 +341,9 @@ body textarea:required:valid{
         @media only screen and (max-width : 1320px){
             left: 0;
         }
+        @media only screen and (max-width : 500px){
+            position: relative;
+        }
     }
     .lSSlideOuter .lSPager.lSpg{
         position: absolute;
@@ -353,6 +384,7 @@ body textarea:required:valid{
         }
     }
     @media only screen and (max-width : 991px){
+        padding: 0 15px;
         .lSSlideOuter .lSPager.lSpg{
             left: 50%;
             margin-left: -92px;
@@ -390,9 +422,10 @@ body textarea:required:valid{
         margin-left: 0;
         padding-top: 137px;
     }
-    @media only screen and (max-width : 380px){
+    @media only screen and (max-width : 500px){
         padding-top: 0px;
     }
+
 }
 
 .right-text-auto{
@@ -411,8 +444,17 @@ body textarea:required:valid{
 
     }
     @media only screen and (max-width : 1450px){
-        padding: 0;
+        padding: 135px 0 0 0 ;
         text-align: center;
+    }
+    @media only screen and (max-width : 991px){
+        padding-top: 25px;
+    }
+    @media only screen and (max-width : 500px){
+        h2{
+            font-size:28px;
+        }
+        text-align: left;
     }
 }
 
@@ -496,6 +538,9 @@ body textarea:required:valid{
     li{
         position: relative;
         padding-top: 130px;
+        @media only screen and (max-width : 400px){
+            padding-top: 0;
+        }
     }
     ul{
         height: auto !important;
@@ -514,6 +559,7 @@ body textarea:required:valid{
             top: -180px;
         }
     }
+
 
 }
 
@@ -638,11 +684,12 @@ body textarea:required:valid{
     }
     @media only screen and (max-width : 1320px){
         padding-left: 25px;
+
     }
-    @media only screen and (max-width : 700px){
+    @media only screen and (max-width : 780px){
         float: none;
         width: 100%;
-        padding-left: 0;
+        padding: 0 15px;
     }
 }
 .right-foto-dima{
@@ -652,6 +699,7 @@ body textarea:required:valid{
     background-position: center;
     background-size: cover;
     text-align: center;
+    position: relative;
     img{
         margin-top: -45px;
     }
@@ -660,25 +708,58 @@ body textarea:required:valid{
         img{
             margin-top: 0;
             width: 100%;
+
         }
     }
     @media only screen and (max-width : 1320px){
         img{
             margin-top: 49px;
+
         }
     }
     @media only screen and (max-width : 1222px){
         min-height: 697px;
         position: relative;
         img{
-            margin-top: 79px;
+            margin-top: 0px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
 
         }
     }
-    @media only screen and (max-width : 1222px){
+    @media only screen and (max-width : 1162px){
+        min-height: 729px;
+    }
+    @media only screen and (max-width : 978px){
+        min-height: 761px;
+    }
+    @media only screen and (max-width : 921px){
+        min-height: 793px;
+    }
+    @media only screen and (max-width : 857px){
+        min-height: 825px;
+        img{
+            top: 25%;
+        }
+    }
+    @media only screen and (max-width : 831px){
+        min-height: 857px;
+    }
+    @media only screen and (max-width : 813px){
+        min-height: 889px;
+    }
+    @media only screen and (max-width : 780px){
         float: none;
+        min-height: auto;
+        text-align: center;
         width: 100%;
-
+        img{
+            position: relative;
+            top: auto;
+            left: auto;
+            bottom: auto;
+        }
     }
 }
 
