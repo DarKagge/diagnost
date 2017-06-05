@@ -23,6 +23,12 @@
   src: url("../fonts/FuturaNewHeavy/FuturaNewHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaNewHeavy/FuturaNewHeavy.woff") format("woff"), url("../fonts/FuturaNewHeavy/FuturaNewHeavy.ttf") format("truetype"); }
 
 @font-face {
+  font-family: "FuturaNewBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/FuturaNewBold/FuturaNewBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaNewBold/FuturaNewBold.woff") format("woff"), url("../fonts/FuturaNewBold/FuturaNewBold.ttf") format("truetype"); }
+
+@font-face {
   font-family: "FuturaNewMedium";
   font-style: normal;
   font-weight: normal;

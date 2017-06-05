@@ -188,7 +188,7 @@ header {
     color: #fff;
     font-size: 26px;
     font-family: FuturaNewBook;
-    padding-top: 33px;
+    padding: 33px 0;
     display: block;
     border-top: 3px solid transparent;
     position: relative;
