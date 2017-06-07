@@ -1808,7 +1808,7 @@ body .capcha{
         }
     }
     @media only screen and (max-width : 991px){
-        padding: 120px 25px;
+        padding: 80px 25px;
     }
     @media only screen and (max-width : 500px){
         p{
@@ -1816,7 +1816,10 @@ body .capcha{
         }
     }
     @media only screen and (max-width : 450px){
-     padding: 120px 15px;
+     padding: 80px 15px;
+    }
+    @media only screen and (max-width : 400px){
+        padding: 0px 15px;
     }
 }
 .img-rev-second{
@@ -1866,6 +1869,11 @@ body .capcha{
         }
         h3{
             text-align: center;
+        }
+    }
+    @media only screen and (max-width : 450px){
+        h2{
+            font-size: 24px;
         }
     }
 }
