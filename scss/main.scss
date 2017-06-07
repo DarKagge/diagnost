@@ -169,6 +169,7 @@ body textarea:required:valid{
         font-family: FuturaNewHeavy;
     }
     @media only screen and (max-width : 991px){
+        left: 25px;
         h2{
             font-size: 35px;
             line-height: 35px;
@@ -1112,7 +1113,7 @@ footer{
 
 
 .breadcrumbs{
-    margin: 50px 90px;
+    margin: 50px 180px;
     .active{
         color: #bbc0c4;
     }
@@ -1149,6 +1150,9 @@ footer{
             color: #bbc0c4;
         }
     }
+    @media only screen and (max-width : 1750px){
+        margin: 50px 90px;
+    }
     @media only screen and (max-width : 991px){
         margin: 50px 25px;
     }
@@ -1156,6 +1160,9 @@ footer{
         a{
             font-size: 18px;
         }
+    }
+    @media only screen and (max-width : 450px){
+        margin: 50px 15px;
     }
 
 }
@@ -1493,7 +1500,61 @@ footer{
     @media only screen and (max-width : 1330px){
         padding: 160px 0px 400px 0px;
     }
+    @media only screen and (max-width : 991px){
+        padding: 60px 0px 400px 0px;
+        button{
+            float:right;
+        }
+
+        form{
+            p{
+                font-size: 22px;
+                font-family:FuturaNewBook;
+            }
+            br{
+                display: none;
+            }
+            input{
+                max-width: inherit;
+            }
+            textarea{
+                max-width: inherit;
+            }
+        }
+    }
+    @media only screen and (max-width : 522px){
+        button{
+            float: none;
+        }
+    }
+    @media only screen and (max-width : 512px){
+        padding: 85px 0px 400px 0px;
+        .col-xs-12{
+            padding: 0;
+        }
+    }
+    @media only screen and (max-width : 400px){
+        form{
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+    @media only screen and (max-width : 350px){
+        padding: 60px 0px 50px 0px;
+    }
 }
+
+
+
+.in-contacts-f{
+    @media only screen and (max-width : 991px){
+        .inner{
+            padding: 0 10px;
+        }
+    }
+}
+
 
 .cont-phones{
     h3{
@@ -1528,6 +1589,39 @@ footer{
             width: 300px;
             display: inline-block;
         }
+    }
+    @media only screen and (max-width : 656px){
+        h3{
+            font-size: 18px;
+            width: 165px;
+        }
+        p{
+            font-size: 18px;
+        }
+        .email-cont a{
+            font-size: 18px;
+        }
+    }
+    @media only screen and (max-width : 383px){
+        h3{
+            width: 160px;
+            line-height: 24px;
+        }
+    }
+    @media only screen and (max-width : 350px){
+        text-align: center;
+        h3{
+            text-align: center;
+            width: inherit;
+            display: block;
+        }
+    }
+}
+
+.br-phone{
+    display: none;
+    @media only screen and (max-width : 383px){
+        display: block;
     }
 }
 
@@ -1585,6 +1679,48 @@ footer{
             width: 315px;
         }
     }
+    @media only screen and (max-width : 679px){
+        ul{
+            width: 500px;
+        }
+        li{
+            width: 245px;
+        }
+    }
+    @media only screen and (max-width : 679px){
+        li{
+            width: 180px;
+        }
+        a{
+            font-size: 18px;
+        }
+    }
+    @media only screen and (max-width : 552px){
+        ul{
+            width: 350px;
+        }
+        li{
+          width: 165px;
+        }
+        .email-cont {
+            a{
+                text-align: center;
+            }
+
+        }
+    }
+    @media only screen and (max-width : 350px){
+        ul{
+            width: inherit;
+            text-align: center;
+        }
+        li{
+            display: inline-block;
+            float: none;
+            width: inherit;
+            margin: 0 10px;
+        }
+    }
 }
 
 
@@ -1598,6 +1734,9 @@ body .capcha{
         display: inline-block;
         margin-left: 5px;
     }
+    @media only screen and (max-width : 991px){
+        float: left;
+    }
 }
 
 
@@ -1608,6 +1747,105 @@ body .capcha{
     li{
         float: left;
         margin: 0 25px;
+    }
+    @media only screen and (max-width : 991px){
+        bottom: 50px;
+    }
+    @media only screen and (max-width : 559px){
+        position: relative;
+        bottom: auto;
+        li{
+            float: none;
+            margin: 20px 0;
+        }
+    }
+    @media only screen and (max-width : 512px){
+        left: -15px;
+    }
+}
+
+
+.text-amenities-in{
+    padding: 0 90px;
+    text-align: left;
+    p{
+        font-size:28px;
+        font-family:FuturaNewBook;
+    }
+    @media only screen and (max-width : 1640px){
+        padding: 0 35px;
+    }
+    @media only screen and (max-width : 991px){
+        p{
+            br{
+                display: none;
+            }
+        }
+    }
+    @media only screen and (max-width : 800px){
+        p{
+            font-size: 20px;
+        }
+    }
+}
+
+.reviews-secondary{
+    padding: 120px 90px;
+    p{
+        font-family:FuturaNewBook;
+        font-size:28px;
+        color: #414748;
+        padding-top: 20px;
+        line-height: 30px;
+    }
+    ul{
+        text-align: center;
+        li{
+            max-width: 1200px;
+            display: inline-block;
+            margin: 50px 0;
+        }
+    }
+    @media only screen and (max-width : 991px){
+        padding: 120px 25px;
+    }
+}
+.img-rev-second{
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 120px;
+    img{
+        width: 100%;
+    }
+}
+.text-rev-second{
+    display: inline-block;
+    max-width: 900px;
+    padding-left: 90px;
+    text-align: left;
+    h2{
+        font-size:28px;
+        font-family:FuturaNewDemi;
+        line-height: 30px;
+    }
+    p{
+        font-size: 20px;
+        font-family: FuturaNewBook;
+    }
+    h3{
+        font-size:26px;
+        font-family:FuturaNewMedium;
+        line-height: 28px;
+        padding-top: 25px;
+    }
+    @media only screen and (max-width : 1263px){
+        max-width: 700px;
+    }
+    @media only screen and (max-width : 1263px){
+        max-width: 500px;
     }
 }
 //ALWAYS END

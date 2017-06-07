@@ -125,9 +125,11 @@ body textarea:required:valid {
     font-size: 50px;
     font-family: FuturaNewHeavy; }
   @media only screen and (max-width: 991px) {
-    .all-title h2 {
-      font-size: 35px;
-      line-height: 35px; } }
+    .all-title {
+      left: 25px; }
+      .all-title h2 {
+        font-size: 35px;
+        line-height: 35px; } }
   @media only screen and (max-width: 512px) {
     .all-title {
       padding: 20px 25px; }
@@ -849,7 +851,7 @@ footer {
       padding: 0 25px; } }
 
 .breadcrumbs {
-  margin: 50px 90px; }
+  margin: 50px 180px; }
   .breadcrumbs .active {
     color: #bbc0c4; }
   .breadcrumbs ul li {
@@ -872,12 +874,18 @@ footer {
       content: '/';
       font-size: 20px;
       color: #bbc0c4; }
+  @media only screen and (max-width: 1750px) {
+    .breadcrumbs {
+      margin: 50px 90px; } }
   @media only screen and (max-width: 991px) {
     .breadcrumbs {
       margin: 50px 25px; } }
   @media only screen and (max-width: 792px) {
     .breadcrumbs a {
       font-size: 18px; } }
+  @media only screen and (max-width: 450px) {
+    .breadcrumbs {
+      margin: 50px 15px; } }
 
 .txt-404 {
   text-align: center;
@@ -1152,6 +1160,38 @@ footer {
   @media only screen and (max-width: 1330px) {
     .contacts {
       padding: 160px 0px 400px 0px; } }
+  @media only screen and (max-width: 991px) {
+    .contacts {
+      padding: 60px 0px 400px 0px; }
+      .contacts button {
+        float: right; }
+      .contacts form p {
+        font-size: 22px;
+        font-family: FuturaNewBook; }
+      .contacts form br {
+        display: none; }
+      .contacts form input {
+        max-width: inherit; }
+      .contacts form textarea {
+        max-width: inherit; } }
+  @media only screen and (max-width: 522px) {
+    .contacts button {
+      float: none; } }
+  @media only screen and (max-width: 512px) {
+    .contacts {
+      padding: 85px 0px 400px 0px; }
+      .contacts .col-xs-12 {
+        padding: 0; } }
+  @media only screen and (max-width: 400px) {
+    .contacts form p {
+      font-size: 18px; } }
+  @media only screen and (max-width: 350px) {
+    .contacts {
+      padding: 60px 0px 50px 0px; } }
+
+@media only screen and (max-width: 991px) {
+  .in-contacts-f .inner {
+    padding: 0 10px; } }
 
 .cont-phones h3 {
   display: inline-block;
@@ -1182,6 +1222,34 @@ footer {
   .cont-phones h3 {
     width: 300px;
     display: inline-block; } }
+
+@media only screen and (max-width: 656px) {
+  .cont-phones h3 {
+    font-size: 18px;
+    width: 165px; }
+  .cont-phones p {
+    font-size: 18px; }
+  .cont-phones .email-cont a {
+    font-size: 18px; } }
+
+@media only screen and (max-width: 383px) {
+  .cont-phones h3 {
+    width: 160px;
+    line-height: 24px; } }
+
+@media only screen and (max-width: 350px) {
+  .cont-phones {
+    text-align: center; }
+    .cont-phones h3 {
+      text-align: center;
+      width: inherit;
+      display: block; } }
+
+.br-phone {
+  display: none; }
+  @media only screen and (max-width: 383px) {
+    .br-phone {
+      display: block; } }
 
 .work-time {
   padding-top: 40px; }
@@ -1224,6 +1292,32 @@ footer {
     .social-cont li {
       float: left;
       width: 315px; } }
+  @media only screen and (max-width: 679px) {
+    .social-cont ul {
+      width: 500px; }
+    .social-cont li {
+      width: 245px; } }
+  @media only screen and (max-width: 679px) {
+    .social-cont li {
+      width: 180px; }
+    .social-cont a {
+      font-size: 18px; } }
+  @media only screen and (max-width: 552px) {
+    .social-cont ul {
+      width: 350px; }
+    .social-cont li {
+      width: 165px; }
+    .social-cont .email-cont a {
+      text-align: center; } }
+  @media only screen and (max-width: 350px) {
+    .social-cont ul {
+      width: inherit;
+      text-align: center; }
+    .social-cont li {
+      display: inline-block;
+      float: none;
+      width: inherit;
+      margin: 0 10px; } }
 
 body .capcha input {
   max-width: 200px;
@@ -1233,6 +1327,10 @@ body .capcha .text-capcha {
   display: inline-block;
   margin-left: 5px; }
 
+@media only screen and (max-width: 991px) {
+  body .capcha {
+    float: left; } }
+
 .cont-icons {
   position: absolute;
   bottom: 110px;
@@ -1240,6 +1338,88 @@ body .capcha .text-capcha {
   .cont-icons li {
     float: left;
     margin: 0 25px; }
+  @media only screen and (max-width: 991px) {
+    .cont-icons {
+      bottom: 50px; } }
+  @media only screen and (max-width: 559px) {
+    .cont-icons {
+      position: relative;
+      bottom: auto; }
+      .cont-icons li {
+        float: none;
+        margin: 20px 0; } }
+  @media only screen and (max-width: 512px) {
+    .cont-icons {
+      left: -15px; } }
+
+.text-amenities-in {
+  padding: 0 90px;
+  text-align: left; }
+  .text-amenities-in p {
+    font-size: 28px;
+    font-family: FuturaNewBook; }
+  @media only screen and (max-width: 1640px) {
+    .text-amenities-in {
+      padding: 0 35px; } }
+  @media only screen and (max-width: 991px) {
+    .text-amenities-in p br {
+      display: none; } }
+  @media only screen and (max-width: 800px) {
+    .text-amenities-in p {
+      font-size: 20px; } }
+
+.reviews-secondary {
+  padding: 120px 90px; }
+  .reviews-secondary p {
+    font-family: FuturaNewBook;
+    font-size: 28px;
+    color: #414748;
+    padding-top: 20px;
+    line-height: 30px; }
+  .reviews-secondary ul {
+    text-align: center; }
+    .reviews-secondary ul li {
+      max-width: 1200px;
+      display: inline-block;
+      margin: 50px 0; }
+  @media only screen and (max-width: 991px) {
+    .reviews-secondary {
+      padding: 120px 25px; } }
+
+.img-rev-second {
+  display: inline-block;
+  vertical-align: top;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  -webkit-border-radius: 120px;
+  border-radius: 120px; }
+  .img-rev-second img {
+    width: 100%; }
+
+.text-rev-second {
+  display: inline-block;
+  max-width: 900px;
+  padding-left: 90px;
+  text-align: left; }
+  .text-rev-second h2 {
+    font-size: 28px;
+    font-family: FuturaNewDemi;
+    line-height: 30px; }
+  .text-rev-second p {
+    font-size: 20px;
+    font-family: FuturaNewBook; }
+  .text-rev-second h3 {
+    font-size: 26px;
+    font-family: FuturaNewMedium;
+    line-height: 28px;
+    padding-top: 25px; }
+  @media only screen and (max-width: 1263px) {
+    .text-rev-second {
+      max-width: 700px; } }
+  @media only screen and (max-width: 1263px) {
+    .text-rev-second {
+      max-width: 500px; } }
 
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
