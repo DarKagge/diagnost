@@ -139,7 +139,8 @@ body textarea:required:valid {
         margin-left: 0; } }
   @media only screen and (max-width: 400px) {
     .all-title {
-      position: relative; } }
+      position: relative;
+      left: 0; } }
   @media only screen and (max-width: 380px) {
     .all-title {
       position: relative;
@@ -1385,6 +1386,12 @@ body .capcha .text-capcha {
   @media only screen and (max-width: 991px) {
     .reviews-secondary {
       padding: 120px 25px; } }
+  @media only screen and (max-width: 500px) {
+    .reviews-secondary p {
+      font-size: 24px; } }
+  @media only screen and (max-width: 450px) {
+    .reviews-secondary {
+      padding: 120px 15px; } }
 
 .img-rev-second {
   display: inline-block;
@@ -1420,6 +1427,16 @@ body .capcha .text-capcha {
   @media only screen and (max-width: 1263px) {
     .text-rev-second {
       max-width: 500px; } }
+  @media only screen and (max-width: 733px) {
+    .text-rev-second {
+      max-width: inherit;
+      width: 100%;
+      padding-left: 0; }
+      .text-rev-second h2 {
+        text-align: center;
+        padding-top: 15px; }
+      .text-rev-second h3 {
+        text-align: center; } }
 
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
