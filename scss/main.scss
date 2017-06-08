@@ -1877,6 +1877,144 @@ body .capcha{
         }
     }
 }
+
+
+
+.portfolio{
+  padding: 120px 90px;
+  p{
+    font-size:28px;
+    font-family:FuturaNewBook;
+    line-height: 33px;
+    color: #414748;
+  }
+    @media only screen and (max-width : 991px){
+        padding: 90px 25px;
+    }
+    @media only screen and (max-width : 450px){
+        padding: 80px 15px;
+    }
+    @media only screen and (max-width : 400px){
+        padding: 0px 15px;
+    }
+}
+
+.section-p{
+    padding: 0;
+    ul{
+        text-align: center;
+    }
+
+    li{
+        max-width: 1560px;
+        display: inline-block;
+        padding: 0;
+        background-color: #fff;
+        @media only screen and (max-width : 1079px){
+            display: inline-block;
+            vertical-align: top;
+            max-width: 400px;
+            margin: 20px 15px;
+            &:nth-child(2n){
+                margin-right: 0;
+            }
+            &:nth-child(2n+1){
+                margin-left: 0;
+            }
+
+        }
+        @media only screen and (max-width : 991px){
+            max-width: 345px;
+        }
+    }
+
+    .foto-art{
+        display: block;
+        float: left;
+        width: 750px;
+        img{
+            width: 100%;
+        }
+        @media only screen and (max-width : 1650px){
+            width: 650px;
+        }
+        @media only screen and (max-width : 1450px){
+            width: 550px;
+        }
+        @media only screen and (max-width : 1279px){
+            img{
+                height: 343px;
+            }
+        }
+        @media only screen and (max-width : 1179px){
+            width: 500px;
+        }
+        @media only screen and (max-width : 1079px){
+            width: inherit;
+            float: none;
+        }
+        @media only screen and (max-width : 991px){
+            img{
+                height: 198px;
+            }
+        }
+    }
+    .text-art{
+        display: block;
+        text-align: left;
+        float: left;
+        width: 810px;
+        border: none;
+        margin: 0;
+        padding-left: 60px;
+        padding-top: 69px;
+        padding-right: 60px;
+        p{
+            font-size:20px;
+            line-height: 23px;
+        }
+        a{
+            border: 5px solid #eaf3f6;
+        }
+        @media only screen and (max-width : 1750px){
+            width: 770px;
+        }
+        @media only screen and (max-width : 1650px){
+            width: 670px;
+        }
+        @media only screen and (max-width : 1450px){
+            width: 550px;
+            padding-top: 22px;
+        }
+        @media only screen and (max-width : 1320px){
+            p{
+                height: 117px;
+            }
+        }
+        @media only screen and (max-width : 1279px){
+            width: 450px;
+        }
+        @media only screen and (max-width : 1179px){
+            width: 400px;
+        }
+        @media only screen and (max-width : 1079px){
+            width: inherit;
+            float: none;
+            min-height: 323px;
+            text-align: center;
+            padding: 25px 28px;
+            h2{
+                text-align: left;
+                font-size: 32px;
+            }
+            p{
+                text-align: left;
+            }
+        }
+    }
+
+}
+
 //ALWAYS END
 @import "media.scss";
 @import "sketches.scss";

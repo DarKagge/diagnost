@@ -1444,6 +1444,117 @@ body .capcha .text-capcha {
     .text-rev-second h2 {
       font-size: 24px; } }
 
+.portfolio {
+  padding: 120px 90px; }
+  .portfolio p {
+    font-size: 28px;
+    font-family: FuturaNewBook;
+    line-height: 33px;
+    color: #414748; }
+  @media only screen and (max-width: 991px) {
+    .portfolio {
+      padding: 90px 25px; } }
+  @media only screen and (max-width: 450px) {
+    .portfolio {
+      padding: 80px 15px; } }
+  @media only screen and (max-width: 400px) {
+    .portfolio {
+      padding: 0px 15px; } }
+
+.section-p {
+  padding: 0; }
+  .section-p ul {
+    text-align: center; }
+  .section-p li {
+    max-width: 1560px;
+    display: inline-block;
+    padding: 0;
+    background-color: #fff; }
+    @media only screen and (max-width: 1079px) {
+      .section-p li {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 400px;
+        margin: 20px 15px; }
+        .section-p li:nth-child(2n) {
+          margin-right: 0; }
+        .section-p li:nth-child(2n+1) {
+          margin-left: 0; } }
+    @media only screen and (max-width: 991px) {
+      .section-p li {
+        max-width: 345px; } }
+  .section-p .foto-art {
+    display: block;
+    float: left;
+    width: 750px; }
+    .section-p .foto-art img {
+      width: 100%; }
+    @media only screen and (max-width: 1650px) {
+      .section-p .foto-art {
+        width: 650px; } }
+    @media only screen and (max-width: 1450px) {
+      .section-p .foto-art {
+        width: 550px; } }
+    @media only screen and (max-width: 1279px) {
+      .section-p .foto-art img {
+        height: 343px; } }
+    @media only screen and (max-width: 1179px) {
+      .section-p .foto-art {
+        width: 500px; } }
+    @media only screen and (max-width: 1079px) {
+      .section-p .foto-art {
+        width: inherit;
+        float: none; } }
+    @media only screen and (max-width: 991px) {
+      .section-p .foto-art img {
+        height: 198px; } }
+  .section-p .text-art {
+    display: block;
+    text-align: left;
+    float: left;
+    width: 810px;
+    border: none;
+    margin: 0;
+    padding-left: 60px;
+    padding-top: 69px;
+    padding-right: 60px; }
+    .section-p .text-art p {
+      font-size: 20px;
+      line-height: 23px; }
+    .section-p .text-art a {
+      border: 5px solid #eaf3f6; }
+    @media only screen and (max-width: 1750px) {
+      .section-p .text-art {
+        width: 770px; } }
+    @media only screen and (max-width: 1650px) {
+      .section-p .text-art {
+        width: 670px; } }
+    @media only screen and (max-width: 1450px) {
+      .section-p .text-art {
+        width: 550px;
+        padding-top: 22px; } }
+    @media only screen and (max-width: 1320px) {
+      .section-p .text-art p {
+        height: 117px; } }
+    @media only screen and (max-width: 1279px) {
+      .section-p .text-art {
+        width: 450px; } }
+    @media only screen and (max-width: 1179px) {
+      .section-p .text-art {
+        width: 400px; } }
+    @media only screen and (max-width: 1079px) {
+      .section-p .text-art {
+        width: inherit;
+        float: none;
+        min-height: 323px;
+        text-align: center;
+        padding: 25px 28px; }
+        .section-p .text-art h2 {
+          text-align: left;
+          font-size: 32px; }
+        .section-p .text-art p {
+          text-align: left; } }
+
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
