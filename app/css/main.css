@@ -1555,6 +1555,101 @@ body .capcha .text-capcha {
         .section-p .text-art p {
           text-align: left; } }
 
+.portfolio-in {
+  padding: 124px 240px; }
+  @media only screen and (max-width: 1350px) {
+    .portfolio-in {
+      padding: 124px 0px; } }
+  @media only screen and (max-width: 400px) {
+    .portfolio-in {
+      padding: 0; } }
+
+.slider-portfolio {
+  padding: 0 150px;
+  position: relative; }
+  .slider-portfolio .lSSlideOuter .lSGallery li img, .slider-portfolio .lSSlideOuter .lightSlider > * img {
+    width: 100%; }
+  .slider-portfolio .lSSlideOuter .lSPager.lSGallery {
+    margin-top: 3px !important; }
+  @media only screen and (max-width: 991px) {
+    .slider-portfolio {
+      padding: 0 25px; } }
+  @media only screen and (max-width: 400px) {
+    .slider-portfolio {
+      padding: 0 15px; } }
+
+.prev-portfolio {
+  padding: 0 150px; }
+  .prev-portfolio li {
+    padding-top: 50px; }
+  .prev-portfolio h2 {
+    font-size: 46px;
+    font-family: FuturaNewDemi;
+    color: #3e3e3e;
+    line-height: 46px; }
+  .prev-portfolio p {
+    font-size: 29px;
+    padding-left: 60px;
+    color: #414748;
+    padding-top: 39px; }
+  .prev-portfolio img {
+    padding-right: 25px;
+    display: inline-block;
+    vertical-align: middle; }
+  .prev-portfolio span {
+    font-family: FuturaNewHeavy; }
+  @media only screen and (max-width: 991px) {
+    .prev-portfolio {
+      padding: 0 25px; }
+      .prev-portfolio img {
+        padding-right: 10px; }
+      .prev-portfolio h2 {
+        font-size: 32px;
+        line-height: 32px; }
+      .prev-portfolio p {
+        font-size: 20px;
+        padding-top: 15px;
+        padding-left: 46px; } }
+
+.arrow-slider-pt a {
+  width: 85px;
+  height: 85px;
+  display: block;
+  position: absolute;
+  top: 30%;
+  border: 5px solid #cddadf;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .arrow-slider-pt a:hover {
+    border: 5px solid red; }
+
+@media only screen and (max-width: 991px) {
+  .arrow-slider-pt {
+    position: relative;
+    width: 100%;
+    margin-top: 19px; }
+    .arrow-slider-pt a {
+      top: 0;
+      position: relative;
+      float: left; } }
+
+.left-arrow-pt a {
+  left: 45px;
+  background-image: url("../img/arrow-article.png"); }
+
+@media only screen and (max-width: 991px) {
+  .left-arrow-pt a {
+    left: 0; } }
+
+.right-arrow-pt a {
+  right: 45px;
+  background-image: url("../img/arrow-article1.png"); }
+
+@media only screen and (max-width: 991px) {
+  .right-arrow-pt a {
+    right: 0;
+    float: right; } }
+
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */

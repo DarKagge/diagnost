@@ -128,7 +128,7 @@ $(function() {
 
 
 
-		var autoplaySlider = $('#adapt').lightSlider({
+		var adaptive = $('#adapt').lightSlider({
 			adaptiveHeight:true,
 			item:1,
 			slideMargin:0,
@@ -137,9 +137,41 @@ $(function() {
 		});
 		$(".left-arrow-a a").on("click",function (e) {
 			e.preventDefault();
-			autoplaySlider.goToPrevSlide();
+			adaptive.goToPrevSlide();
 		});
 		$(".right-arrow-a a").on("click",function (e) {
 			e.preventDefault();
-			autoplaySlider.goToNextSlide();
+			adaptive.goToNextSlide();
 		});
+
+
+
+
+
+
+
+
+
+	var lightGallery = $('#imageGallery').lightSlider({
+		gallery:true,
+		item:1,
+		loop:true,
+		thumbItem:6,
+		controls:false,
+		slideMargin:0,
+		enableDrag: false,
+		currentPagerPosition:'left',
+		onSliderLoad: function(el) {
+			el.lightGallery({
+				selector: '#imageGallery .lslide'
+			});
+		}
+	});
+	$(".left-arrow-pt a").on("click",function (e) {
+		e.preventDefault();
+		lightGallery.goToPrevSlide();
+	});
+	$(".right-arrow-pt a").on("click",function (e) {
+		e.preventDefault();
+		lightGallery.goToNextSlide();
+	});

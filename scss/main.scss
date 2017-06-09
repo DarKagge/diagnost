@@ -2015,6 +2015,127 @@ body .capcha{
 
 }
 
+.portfolio-in{
+    padding: 124px 240px;
+    @media only screen and (max-width : 1350px){
+        padding: 124px 0px;
+    }
+    @media only screen and (max-width : 400px){
+        padding: 0;
+    }
+}
+.slider-portfolio{
+    padding: 0 150px;
+    position: relative;
+    .lSSlideOuter .lSGallery li, .lSSlideOuter .lightSlider>*{
+        img{
+            width: 100%;
+        }
+    }
+    .lSSlideOuter .lSPager.lSGallery{
+        margin-top: 3px !important;
+    }
+    @media only screen and (max-width : 991px){
+        padding: 0 25px;
+    }
+    @media only screen and (max-width : 400px){
+        padding: 0 15px;
+    }
+}
+
+.prev-portfolio{
+    padding: 0 150px;
+    li{
+        padding-top: 50px;
+    }
+    h2{
+        font-size: 46px;
+        font-family:FuturaNewDemi;
+        color: #3e3e3e;
+        line-height: 46px;
+    }
+    p{
+        font-size: 29px;
+        padding-left: 60px;
+        color: #414748;
+        padding-top: 39px;
+
+    }
+    img{
+        padding-right: 25px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    span{
+        font-family:FuturaNewHeavy;
+    }
+    @media only screen and (max-width : 991px){
+        padding: 0 25px;
+        img{
+            padding-right: 10px;
+        }
+        h2{
+            font-size: 32px;
+            line-height: 32px;
+        }
+        p{
+            font-size: 20px;
+            padding-top: 15px;
+            padding-left: 46px;
+        }
+    }
+}
+
+
+.arrow-slider-pt{
+    a{
+        width: 85px;
+        height: 85px;
+        display: block;
+        position: absolute;
+        top: 30%;
+        border: 5px solid #cddadf;
+        background-repeat: no-repeat;
+        background-position: center;
+        &:hover{
+            border: 5px solid red;
+        }
+
+    }
+    @media only screen and (max-width : 991px){
+        position: relative;
+        width: 100%;
+        margin-top: 19px;
+      a{
+          top: 0;
+          position: relative;
+          float: left;
+      }
+    }
+}
+.left-arrow-pt{
+    a{
+        left: 45px;
+        background-image: url("../img/arrow-article.png");
+    }
+    @media only screen and (max-width : 991px){
+        a{
+            left: 0;
+        }
+    }
+}
+.right-arrow-pt{
+    a{
+        right: 45px;
+        background-image: url("../img/arrow-article1.png");
+    }
+    @media only screen and (max-width : 991px){
+        a{
+            right: 0;
+            float: right;
+        }
+    }
+}
 //ALWAYS END
 @import "media.scss";
 @import "sketches.scss";
