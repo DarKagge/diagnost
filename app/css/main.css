@@ -1576,7 +1576,7 @@ body .capcha .text-capcha {
       padding: 0 25px; } }
   @media only screen and (max-width: 400px) {
     .slider-portfolio {
-      padding: 0 15px; } }
+      padding: 0; } }
 
 .prev-portfolio {
   padding: 0 150px; }
