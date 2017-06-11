@@ -1650,6 +1650,180 @@ body .capcha .text-capcha {
     right: 0;
     float: right; } }
 
+.price-in {
+  padding: 120px 0; }
+  .price-in li {
+    margin-bottom: 32px; }
+  @media only screen and (max-width: 1062px) {
+    .price-in ul {
+      text-align: center; }
+    .price-in li {
+      text-align: left;
+      max-width: 400px;
+      display: inline-block;
+      vertical-align: top;
+      margin: 20px 14px; }
+    .price-in .img-price {
+      width: 100%;
+      float: none; }
+      .price-in .img-price img {
+        height: inherit; }
+    .price-in .text-price {
+      width: 100%;
+      float: none;
+      max-height: inherit;
+      min-height: inherit; }
+      .price-in .text-price p {
+        min-height: inherit; }
+      .price-in .text-price .price-coast {
+        text-align: center;
+        padding-bottom: 30px; }
+        .price-in .text-price .price-coast p {
+          display: block; }
+        .price-in .text-price .price-coast a {
+          display: inline-block;
+          margin-top: 15px;
+          float: none !important; } }
+  @media only screen and (max-width: 991px) {
+    .price-in {
+      padding: 50px 25px; }
+      .price-in li {
+        max-width: 345px; }
+        .price-in li:nth-child(2n) {
+          margin-right: 0; }
+        .price-in li:nth-child(2n+1) {
+          margin-left: 0; }
+      .price-in .text-price {
+        padding: 20px 15px; }
+        .price-in .text-price h2 {
+          font-size: 28px;
+          line-height: 29px; }
+        .price-in .text-price .price-coast a {
+          padding: 13.5px 28px; } }
+  @media only screen and (max-width: 772px) {
+    .price-in li {
+      margin: 20px 11px; } }
+  @media only screen and (max-width: 767px) {
+    .price-in {
+      padding: 50px 15px; } }
+  @media only screen and (max-width: 745px) {
+    .price-in li {
+      max-width: inherit;
+      width: 100%; }
+      .price-in li:nth-child(2n) {
+        margin: 20px 0 20px 0; }
+      .price-in li:nth-child(2n+1) {
+        margin: 20px 0 20px 0; } }
+  @media only screen and (max-width: 400px) {
+    .price-in {
+      padding: 0; }
+      .price-in li:nth-child(2n) {
+        margin: 0 0 20px 0; }
+      .price-in li:nth-child(2n+1) {
+        margin: 0 0 20px 0; } }
+
+.img-price {
+  float: left;
+  width: 50%; }
+  .img-price img {
+    width: 100%; }
+  @media only screen and (max-width: 1200px) {
+    .img-price img {
+      height: 374px; } }
+  @media only screen and (max-width: 1115px) {
+    .img-price img {
+      height: 385px; } }
+
+.text-price {
+  width: 50%;
+  background-color: #fff;
+  float: left;
+  padding: 50px 101px;
+  max-height: 529px;
+  min-height: 529px; }
+  .text-price h2 {
+    font-size: 46px;
+    font-family: FuturaNewDemi;
+    color: #414748;
+    line-height: 47px; }
+  .text-price p {
+    font-size: 26px;
+    font-family: FuturaNewBook;
+    line-height: 29px;
+    padding-top: 30px;
+    color: #414748;
+    min-height: 229.5px; }
+  @media only screen and (max-width: 1750px) {
+    .text-price {
+      min-height: 521.33px;
+      max-height: 521.33px; } }
+  @media only screen and (max-width: 1650px) {
+    .text-price {
+      min-height: 488.75px;
+      max-height: 488.75px; } }
+  @media only screen and (max-width: 1450px) {
+    .text-price {
+      min-height: 434.44px;
+      max-height: 434.44px;
+      padding-top: 20px; }
+      .text-price h2 {
+        font-size: 40px;
+        line-height: 40px; }
+      .text-price p {
+        font-size: 20px; } }
+  @media only screen and (max-width: 1320px) {
+    .text-price {
+      min-height: 391px;
+      max-height: 391px;
+      padding: 20px 50px; }
+      .text-price h2 {
+        font-size: 30px;
+        line-height: 30px; }
+      .text-price p {
+        font-size: 18px;
+        padding-top: 15px; }
+      .text-price .price-coast {
+        padding-top: 15px; } }
+  @media only screen and (max-width: 1260px) {
+    .text-price {
+      min-height: 383px;
+      max-height: 383px; } }
+  @media only screen and (max-width: 1230px) {
+    .text-price {
+      min-height: 374px;
+      max-height: 374px; }
+      .text-price .price-coast {
+        padding-top: 0px; } }
+  @media only screen and (max-width: 1115px) {
+    .text-price {
+      min-height: 385px;
+      max-height: 385px; }
+      .text-price .price-coast {
+        padding-top: 15px; } }
+
+.price-coast {
+  padding: 38px 0; }
+  .price-coast p {
+    display: inline-block;
+    padding: 0;
+    font-size: 36px;
+    min-height: inherit; }
+  .price-coast span {
+    color: #ff0920;
+    font-family: FuturaNewHeavy; }
+  .price-coast a {
+    color: #ff0920;
+    font-size: 20px;
+    border: 5px solid #cddadf;
+    display: block;
+    padding: 13.5px 51.5px;
+    font-family: FuturaNewHeavy;
+    text-transform: uppercase;
+    margin-top: -20px; }
+    .price-coast a:hover {
+      text-decoration: none;
+      border: 5px solid #ff0920; }
+
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
