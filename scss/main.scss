@@ -514,9 +514,6 @@ body textarea:required:valid{
     .inner{
         right: 90px;
     }
-    .all-title{
-        left: -50px;
-    }
     @media only screen and (max-width : 1750px){
         left: 0;
         .inner{
@@ -2359,6 +2356,229 @@ body .capcha{
         &:hover{
             text-decoration: none;
             border: 5px solid #ff0920;
+        }
+    }
+}
+
+
+
+.all-forms{
+    h2{
+        font-size:45px;
+        font-family:FuturaNewDemi;
+        line-height: 45px;
+        color: #000;
+    }
+    p{
+        font-size: 30px;
+        line-height: 30px;
+        padding: 30px 0;
+    }
+    input{
+        border: 2px solid #d7d7d7;
+        padding: 10px 22px;
+        max-width: 382px;
+        vertical-align: top;
+        width: 100%;
+        font-size: 28px;
+        font-family:FuturaNewBook;
+        @include placeholder{
+            font-size: 28px;
+            color: #818d8f;
+            font-family:FuturaNewBook;
+        }
+    }
+    button{
+        background-color: #ff0920;
+        text-transform: uppercase;
+        color: #fff;
+        border: 5px solid #ff0920;
+        padding: 13.7px 32.5px;
+        font-size: 20px;
+        margin-left: 10px;
+        &:hover{
+            background-color: transparent;
+        }
+    }
+}
+.head-banner-in{
+    text-align: center;
+    h1{
+        font-size:54px;
+        line-height: 54px;
+        margin: 0;
+    }
+    h2{
+        padding-top: 35px;
+        font-size: 42px;
+        color: #fff;
+        line-height: 50px;
+        font-family:FuturaNewMedium;
+    }
+    span{
+        color: #ff0920;
+    }
+    p{
+        padding-top: 30px;
+        font-size: 28px;
+        color: #fff;
+        line-height: 30px;
+        font-family:FuturaNewBook;
+    }
+    form{
+        margin-top: 40px;
+    }
+}
+
+.recomend-crime{
+    position: relative;
+    left: 90px;
+    background-color: #eaf3f6;
+    border-bottom: 7px solid #cddadf;
+    border-left: 7px solid #cddadf;
+    border-top: 7px solid #cddadf;
+    margin-bottom: 89px;
+    text-align: center;
+    padding-bottom: 120px;
+    .inner{
+        right: 90px;
+    }
+    h2{
+        padding-top: 54px;
+        font-size:36px;
+        line-height: 40px;
+        font-family:FuturaNewBook;
+    }
+    span{
+        color: #ff0920;
+        font-family:FuturaNewMedium;
+    }
+}
+
+.right-ots{
+    background-color: #eaf3f6;
+    position: relative;
+    right: 90px;
+    .inner{
+        left: 90px;
+    }
+}
+
+.items-crime{
+    padding: 150px 0;
+    max-width: 1350px;
+    margin: 0 auto;
+    h2{
+        font-size: 46px;
+        color: #3e3e3e;
+        line-height: 46px;
+        font-family:FuturaNewDemi;
+    }
+    p{
+        font-size: 28px;
+        line-height: 34px;
+        color:#414748;
+        padding-top: 30px;
+        font-family:FuturaNewBook;
+    }
+    .crime-img{
+        padding-top: 45px;
+        li{
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 10px;
+            margin-bottom: 60px;
+            &:first-child{
+                margin-left: 0;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+.price-in-c{
+    background-image: url("../img/bg1.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.price-crime{
+    max-width: 1140px;
+    margin: 120px 0;
+    width: 100%;
+    padding: 70px 0;
+    display: inline-block;
+    background-color: #eaf3f6;
+    h2{
+        font-size: 36px;
+        font-family:FuturaNewDemi;
+        color: #000000;
+    }
+    h3{
+        padding-top: 30px;
+        font-family:FuturaNewMedium;
+        font-size:36px;
+        color: #414748;
+
+    }
+    span{
+        color: #ff0920;
+        font-family:FuturaNewDemi;
+    }
+    p{
+        padding-top: 30px;
+        color:#414748;
+        line-height: 30px;
+        font-size:26px;
+        font-family:FuturaNewBook;
+    }
+    
+}
+
+
+.call-back-c{
+    background-image: url("../img/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin: 80px 0;
+    position: relative;
+    left: 90px;
+    .inner{
+        right: 90px;
+    }
+    form{
+        margin: 120px 0;
+        display: inline-block;
+        h2{
+            color: #fff;
+            font-size:45px;
+            line-height: 45px;
+            font-family:FuturaNewDemi;
+            padding-bottom: 40px;
+        }
+    }
+}
+
+.foot-callback{
+    margin: 80px 0;
+    .inner{
+        border-top: 7px solid #ebf3f6;
+        border-bottom: 7px solid #ebf3f6;
+        background-image: url("../img/b-bg-form.jpg");
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
+    .all-forms{
+        padding: 120px 90px;
+        button{
+            box-shadow: 1px 6px 30px #ff0920;
+            &:hover{
+                color: #000;
+            }
         }
     }
 }
