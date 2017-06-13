@@ -1891,6 +1891,19 @@ body .capcha .text-capcha {
     font-family: FuturaNewBook; }
   .head-banner-in form {
     margin-top: 40px; }
+  @media only screen and (max-width: 1023px) {
+    .head-banner-in h1 {
+      font-size: 38px;
+      line-height: 38px; }
+    .head-banner-in h2 {
+      padding-top: 15px;
+      font-size: 22px;
+      line-height: 23px; }
+      .head-banner-in h2 br {
+        display: none; }
+    .head-banner-in p {
+      font-size: 20px;
+      padding-top: 15px; } }
 
 .recomend-crime {
   position: relative;
