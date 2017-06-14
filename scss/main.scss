@@ -154,7 +154,8 @@ body textarea:required:valid{
 .all-title{
     top: -29px;
     left: -3px;
-    position: absolute;
+    position: relative;
+    display: inline-block;
     background-color: #2d2d2d;
     padding: 17px 90px;
     .red-line{
@@ -198,7 +199,6 @@ body textarea:required:valid{
 
 
 .am-items{
-    padding-top: 121px;
     text-align: center;
     li{
         display: inline-block;
@@ -292,10 +292,6 @@ body textarea:required:valid{
             height: auto;
         }
     }
-
-    @media only screen and (max-width : 400px){
-        padding-top: 0px;
-    }
 }
 
 
@@ -335,6 +331,7 @@ body textarea:required:valid{
         left: 90px;
     }
     .all-title{
+        position: absolute;
         left: 45%;
         z-index: 69;
         h2{
@@ -536,7 +533,7 @@ body textarea:required:valid{
     min-height: 425px;
     li{
         position: relative;
-        padding-top: 130px;
+        padding-top: 60px;
         @media only screen and (max-width : 400px){
             padding-top: 0;
         }
@@ -2400,6 +2397,20 @@ body .capcha{
             background-color: transparent;
         }
     }
+    @media only screen and (max-width : 1023px){
+        input{
+            font-size:22px;
+            padding: 3px 12px;
+            max-width: 235px;
+            @include placeholder{
+                font-size: 22px;
+            }
+        }
+        button{
+            font-size: 16px;
+            padding: 5.6px 24.4px;
+        }
+    }
 
 }
 .head-banner-in{
@@ -2430,6 +2441,7 @@ body .capcha{
         margin-top: 40px;
     }
     @media only screen and (max-width : 1023px){
+        margin-bottom: 74px;
         h1{
             font-size:38px;
             line-height: 38px;
@@ -2472,6 +2484,21 @@ body .capcha{
         color: #ff0920;
         font-family:FuturaNewMedium;
     }
+    @media only screen and (max-width : 1750px){
+        left:0;
+        border-left: 0;
+        .inner{
+            right: 0;
+        }
+    }
+    @media only screen and (max-width : 1023px){
+        padding-bottom: 42px;
+        h2{
+            padding-top: 40px;
+            font-size:24px;
+            line-height: 27px;
+        }
+    }
 }
 
 .right-ots{
@@ -2484,7 +2511,7 @@ body .capcha{
 }
 
 .items-crime{
-    padding: 150px 0;
+    padding: 43px 0;
     max-width: 1350px;
     margin: 0 auto;
     h2{

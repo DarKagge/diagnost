@@ -112,7 +112,8 @@ body textarea:required:valid {
 .all-title {
   top: -29px;
   left: -3px;
-  position: absolute;
+  position: relative;
+  display: inline-block;
   background-color: #2d2d2d;
   padding: 17px 90px; }
   .all-title .red-line {
@@ -148,7 +149,6 @@ body textarea:required:valid {
       margin: 0 auto; } }
 
 .am-items {
-  padding-top: 121px;
   text-align: center; }
   .am-items li {
     display: inline-block;
@@ -221,9 +221,6 @@ body textarea:required:valid {
     @media only screen and (max-width: 1450px) {
       .am-items .title-item {
         height: auto; } }
-  @media only screen and (max-width: 400px) {
-    .am-items {
-      padding-top: 0px; } }
 
 .price-am {
   margin-top: 35px; }
@@ -254,6 +251,7 @@ body textarea:required:valid {
   .auto-slide .inner {
     left: 90px; }
   .auto-slide .all-title {
+    position: absolute;
     left: 45%;
     z-index: 69; }
     .auto-slide .all-title h2 {
@@ -407,7 +405,7 @@ body textarea:required:valid {
   min-height: 425px; }
   .slider-reviews li {
     position: relative;
-    padding-top: 130px; }
+    padding-top: 60px; }
     @media only screen and (max-width: 400px) {
       .slider-reviews li {
         padding-top: 0; } }
@@ -1869,6 +1867,23 @@ body .capcha .text-capcha {
   .all-forms button:hover {
     background-color: transparent; }
 
+@media only screen and (max-width: 1023px) {
+  .all-forms input {
+    font-size: 22px;
+    padding: 3px 12px;
+    max-width: 235px; }
+    .all-forms input::-webkit-input-placeholder {
+      font-size: 22px; }
+    .all-forms input::-moz-placeholder {
+      font-size: 22px; }
+    .all-forms input:-moz-placeholder {
+      font-size: 22px; }
+    .all-forms input:-ms-input-placeholder {
+      font-size: 22px; }
+  .all-forms button {
+    font-size: 16px;
+    padding: 5.6px 24.4px; } }
+
 .head-banner-in {
   text-align: center; }
   .head-banner-in h1 {
@@ -1892,18 +1907,20 @@ body .capcha .text-capcha {
   .head-banner-in form {
     margin-top: 40px; }
   @media only screen and (max-width: 1023px) {
-    .head-banner-in h1 {
-      font-size: 38px;
-      line-height: 38px; }
-    .head-banner-in h2 {
-      padding-top: 15px;
-      font-size: 22px;
-      line-height: 23px; }
-      .head-banner-in h2 br {
-        display: none; }
-    .head-banner-in p {
-      font-size: 20px;
-      padding-top: 15px; } }
+    .head-banner-in {
+      margin-bottom: 74px; }
+      .head-banner-in h1 {
+        font-size: 38px;
+        line-height: 38px; }
+      .head-banner-in h2 {
+        padding-top: 15px;
+        font-size: 22px;
+        line-height: 23px; }
+        .head-banner-in h2 br {
+          display: none; }
+      .head-banner-in p {
+        font-size: 20px;
+        padding-top: 15px; } }
 
 .recomend-crime {
   position: relative;
@@ -1925,6 +1942,19 @@ body .capcha .text-capcha {
   .recomend-crime span {
     color: #ff0920;
     font-family: FuturaNewMedium; }
+  @media only screen and (max-width: 1750px) {
+    .recomend-crime {
+      left: 0;
+      border-left: 0; }
+      .recomend-crime .inner {
+        right: 0; } }
+  @media only screen and (max-width: 1023px) {
+    .recomend-crime {
+      padding-bottom: 42px; }
+      .recomend-crime h2 {
+        padding-top: 40px;
+        font-size: 24px;
+        line-height: 27px; } }
 
 .right-ots {
   background-color: #eaf3f6;
@@ -1934,7 +1964,7 @@ body .capcha .text-capcha {
     left: 90px; }
 
 .items-crime {
-  padding: 150px 0;
+  padding: 43px 0;
   max-width: 1350px;
   margin: 0 auto; }
   .items-crime h2 {
