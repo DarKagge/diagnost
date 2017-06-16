@@ -2384,6 +2384,90 @@ body .capcha .text-capcha {
         max-width: inherit;
         margin: 5px 0 !important; } }
 
+.process {
+  text-align: center;
+  padding-top: 25px; }
+  .process li {
+    display: inline-block;
+    margin: 30px 58px; }
+    .process li * {
+      display: inline-block;
+      vertical-align: middle; }
+    .process li h2 {
+      font-size: 80px;
+      font-family: FuturaNewHeavy;
+      line-height: 80px;
+      color: #ff0920; }
+    .process li p {
+      font-size: 28px;
+      text-transform: uppercase;
+      line-height: 29px;
+      text-align: left;
+      color: #414748;
+      font-family: FuturaNewDemi; }
+  @media only screen and (max-width: 1023px) {
+    .process {
+      text-align: left;
+      padding: 0 25px; }
+      .process li {
+        margin: 22px 0;
+        width: 335px; }
+        .process li h2 {
+          font-size: 67px;
+          line-height: 67px; }
+        .process li p {
+          font-size: 24px;
+          line-height: 24px; }
+        .process li:nth-child(2n+1) {
+          margin-right: 53px; } }
+
+.process-podr {
+  padding: 0 90px; }
+  .process-podr h2 {
+    font-size: 46px;
+    line-height: 46px;
+    color: #3e3e3e;
+    font-family: FuturaNewDemi;
+    text-align: center;
+    padding: 30px 0; }
+  .process-podr li {
+    margin: 40px 0;
+    display: inline-block; }
+    .process-podr li * {
+      display: inline-block;
+      vertical-align: top; }
+    .process-podr li .img-process-p {
+      max-width: 450px; }
+      .process-podr li .img-process-p img {
+        width: 100%; }
+    .process-podr li .text-process-p {
+      max-width: 1050px;
+      padding-left: 60px; }
+      .process-podr li .text-process-p h2 {
+        font-size: 36px;
+        line-height: 36px;
+        color: #ff0920;
+        padding: 0; }
+      .process-podr li .text-process-p p {
+        padding-top: 22px;
+        font-size: 28px;
+        line-height: 34px;
+        color: #414748; }
+  @media only screen and (max-width: 1650px) {
+    .process-podr li .text-process-p {
+      max-width: 900px; } }
+  @media only screen and (max-width: 1450px) {
+    .process-podr li .img-process-p {
+      max-width: 358px; }
+    .process-podr li .text-process-p {
+      max-width: 760px; } }
+  @media only screen and (max-width: 1320px) {
+    .process-podr li .text-process-p {
+      max-width: 600px;
+      padding-left: 30px; }
+      .process-podr li .text-process-p p {
+        font-size: 24px; } }
+
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */

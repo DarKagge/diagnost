@@ -3071,6 +3071,125 @@ body .non-br{
     }
 }
 
+.process{
+    text-align: center;
+    padding-top: 25px;
+    li{
+        display: inline-block;
+        margin: 30px 58px;
+        *{
+           display: inline-block;
+            vertical-align: middle;
+        }
+        h2{
+            font-size:80px;
+            font-family:FuturaNewHeavy;
+            line-height: 80px;
+            color: #ff0920;
+        }
+        p{
+            font-size:28px;
+            text-transform: uppercase;
+            line-height: 29px;
+            text-align: left;
+            color: #414748;
+            font-family:FuturaNewDemi;
+
+        }
+    }
+  @media only screen and (max-width : 1023px){
+    text-align: left;
+    padding: 0 25px;
+    li{
+      margin: 22px 0;
+      width: 335px;
+      h2{
+        font-size: 67px;
+        line-height: 67px;
+      }
+      p{
+        font-size: 24px;
+        line-height: 24px;
+      }
+      &:nth-child(2n+1){
+        margin-right: 53px;
+      }
+    }
+  }
+}
+
+.process-podr{
+    padding: 0 90px;
+    h2{
+        font-size:46px;
+        line-height: 46px;
+        color: #3e3e3e;
+        font-family:FuturaNewDemi;
+        text-align: center;
+        padding: 30px 0;
+    }
+    li{
+        margin: 40px 0;
+        display: inline-block;
+        *{
+            display: inline-block;
+            vertical-align: top;
+        }
+        .img-process-p{
+            max-width: 450px;
+            img{
+                width: 100%;
+            }
+        }
+        .text-process-p{
+            max-width: 1050px;
+            padding-left: 60px;
+            h2{
+                font-size: 36px;
+                line-height: 36px;
+                color: #ff0920;
+                padding: 0;
+            }
+            p{
+                padding-top: 22px;
+                font-size:28px;
+                line-height: 34px;
+                color: #414748;
+            }
+        }
+    }
+  @media only screen and (max-width : 1650px){
+    li{
+      .text-process-p{
+        max-width: 900px;
+      }
+    }
+  }
+  @media only screen and (max-width : 1450px){
+
+    li{
+      .img-process-p{
+        max-width: 358px;
+      }
+      .text-process-p{
+        max-width: 760px;
+      }
+    }
+  }
+  @media only screen and (max-width : 1320px){
+    li{
+      .text-process-p{
+        max-width: 600px;
+        padding-left: 30px;
+        p{
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+
 //ALWAYS END
 @import "media.scss";
 @import "sketches.scss";
