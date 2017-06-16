@@ -216,6 +216,12 @@ body .in-b{
   }
 }
 
+.popup-but-criminal{
+	@media only screen and (max-width : 700px){
+		bottom: inherit;
+	}
+}
+
 .head-menu{
 	margin-top: 35px;
 	display: block;

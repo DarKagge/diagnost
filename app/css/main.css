@@ -144,10 +144,14 @@ body textarea:required:valid {
         padding-top: 15px; }
       .all-title .red-line {
         margin-left: 0; } }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 500px) {
     .all-title {
-      position: relative;
-      left: 0; } }
+      margin-right: 0;
+      left: 0; }
+      .all-title h2 {
+        font-size: 35px; }
+      .all-title .red-line {
+        margin-bottom: 0; } }
   @media only screen and (max-width: 380px) {
     .all-title {
       position: relative;
@@ -414,6 +418,14 @@ body textarea:required:valid {
         left: 0; }
       .reviews div[class*=col-md] {
         width: 100%; } }
+  @media only screen and (max-width: 500px) {
+    .reviews {
+      margin: 20px 0;
+      padding: 0 15px; }
+      .reviews .container-fluid {
+        padding: 0; }
+      .reviews .col-xs-12 {
+        padding: 0; } }
 
 .slider-reviews {
   min-height: 425px; }
@@ -1917,6 +1929,12 @@ body .capcha .text-capcha {
   .all-forms span {
     font-family: FuturaNewDemi; } }
 
+@media only screen and (max-width: 500px) {
+  .all-forms input {
+    max-width: 199px; }
+  .all-forms button {
+    margin-left: 2px; } }
+
 .head-banner-in {
   text-align: center; }
   .head-banner-in h1 {
@@ -1931,6 +1949,8 @@ body .capcha .text-capcha {
     font-family: FuturaNewMedium; }
   .head-banner-in span {
     color: #ff0920; }
+  .head-banner-in b {
+    font-family: FuturaNewDemi; }
   .head-banner-in p {
     padding-top: 30px;
     font-size: 28px;
@@ -1954,6 +1974,16 @@ body .capcha .text-capcha {
       .head-banner-in p {
         font-size: 20px;
         padding-top: 15px; } }
+  @media only screen and (max-width: 500px) {
+    .head-banner-in {
+      text-align: left;
+      padding-top: 20px; }
+      .head-banner-in h1 {
+        font-size: 25px;
+        line-height: 27px; }
+      .head-banner-in h2 {
+        font-size: 22px;
+        line-height: 24px; } }
 
 .recomend-crime {
   position: relative;
@@ -1983,12 +2013,26 @@ body .capcha .text-capcha {
         right: 0; } }
   @media only screen and (max-width: 1023px) {
     .recomend-crime {
-      padding-bottom: 42px;
+      padding: 40px 25px;
       margin-bottom: 50px; }
       .recomend-crime h2 {
-        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-top: 0;
         font-size: 24px;
-        line-height: 27px; } }
+        line-height: 27px; }
+        .recomend-crime h2 br {
+          display: none; } }
+  @media only screen and (max-width: 500px) {
+    .recomend-crime {
+      padding: 35px 15px; }
+      .recomend-crime h2 {
+        line-height: 35px; }
+        .recomend-crime h2 br {
+          display: block; } }
+
+@media only screen and (max-width: 500px) {
+  body .non-br {
+    display: none !important; } }
 
 .right-ots {
   background-color: #eaf3f6;
@@ -2005,6 +2049,12 @@ body .capcha .text-capcha {
   @media only screen and (max-width: 1023px) {
     .right-ots {
       padding-bottom: 30px; } }
+  @media only screen and (max-width: 500px) {
+    .right-ots {
+      padding-left: 15px;
+      padding-right: 15px; }
+      .right-ots .all-title h2 {
+        font-size: 28px; } }
 
 .items-crime {
   padding: 43px 0;
@@ -2050,6 +2100,16 @@ body .capcha .text-capcha {
       .items-crime p {
         font-size: 24px;
         line-height: 26px; } }
+  @media only screen and (max-width: 500px) {
+    .items-crime {
+      padding-left: 0;
+      padding-right: 0; }
+      .items-crime .crime-img li {
+        margin: 2.5px 0;
+        padding-bottom: 0; }
+        .items-crime .crime-img li:nth-child(2n) {
+          margin: 2.5px 0;
+          padding-bottom: 0; } }
 
 .price-in-c {
   margin-top: 90px;
@@ -2059,7 +2119,13 @@ body .capcha .text-capcha {
   padding-bottom: 120px; }
   @media only screen and (max-width: 1023px) {
     .price-in-c {
-      padding-bottom: 25px; } }
+      padding-bottom: 25px;
+      background-image: none;
+      background-color: #212425; } }
+  @media only screen and (max-width: 500px) {
+    .price-in-c {
+      padding-left: 15px;
+      padding-right: 15px; } }
 
 .price-crime {
   max-width: 1140px;
@@ -2100,6 +2166,10 @@ body .capcha .text-capcha {
       .price-crime p {
         font-size: 24px;
         line-height: 27px; } }
+  @media only screen and (max-width: 500px) {
+    .price-crime {
+      margin: 0;
+      padding: 50px 15px; } }
 
 .call-back-c {
   background-image: url("../img/bg2.jpg");
@@ -2128,6 +2198,12 @@ body .capcha .text-capcha {
   @media only screen and (max-width: 1023px) {
     .call-back-c {
       margin-top: 0; } }
+  @media only screen and (max-width: 500px) {
+    .call-back-c {
+      margin-bottom: 40px; }
+      .call-back-c form h2 {
+        font-size: 40px;
+        padding: 0 19px 35px 19px; } }
 
 .foot-callback {
   margin: 80px 0; }
@@ -2154,6 +2230,159 @@ body .capcha .text-capcha {
         background-size: cover; }
       .foot-callback .all-forms {
         padding: 146px 0; } }
+
+.left-ots {
+  position: relative;
+  background-color: #eaf3f6;
+  left: 90px;
+  margin: 50px 0; }
+  .left-ots .inner {
+    right: 90px; }
+  @media only screen and (max-width: 1750px) {
+    .left-ots {
+      left: 0; }
+      .left-ots .inner {
+        right: 0; } }
+  @media only screen and (max-width: 500px) {
+    .left-ots {
+      padding: 0 15px; } }
+
+.why-us {
+  padding: 40px 90px 90px 90px; }
+  .why-us ul {
+    text-align: center; }
+  .why-us li {
+    vertical-align: top;
+    display: inline-block;
+    margin: 5px;
+    max-width: 510px;
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 40px;
+    min-height: 450px; }
+    .why-us li:nth-child(3n) {
+      margin-right: 0; }
+    .why-us li:nth-child(3n+1) {
+      margin-left: 0; }
+    .why-us li .img-for-us {
+      height: 60px; }
+    .why-us li h2 {
+      font-size: 36px;
+      font-family: FuturaNewMedium;
+      line-height: 36px; }
+    .why-us li p {
+      padding-top: 40px;
+      text-align: left;
+      font-size: 28px;
+      line-height: 33px;
+      color: #414748; }
+  @media only screen and (max-width: 1750px) {
+    .why-us li {
+      max-width: 500px;
+      min-height: 470px; } }
+  @media only screen and (max-width: 1650px) {
+    .why-us li {
+      max-width: 450px;
+      min-height: 500px;
+      margin: 17px; }
+      .why-us li h2 {
+        font-size: 30px; } }
+  @media only screen and (max-width: 1450px) {
+    .why-us li {
+      max-width: 400px;
+      margin: 10px;
+      min-height: 531px; }
+      .why-us li h2 {
+        font-size: 28px;
+        line-height: 28px; } }
+  @media only screen and (max-width: 1320px) {
+    .why-us li {
+      max-width: 345px;
+      max-height: 303px;
+      min-height: 303px;
+      margin: 14px;
+      padding: 30px 24px; }
+      .why-us li p {
+        font-size: 18px;
+        line-height: 19px;
+        padding-top: 22px; } }
+  @media only screen and (max-width: 1278px) {
+    .why-us li {
+      margin: 10px; } }
+  @media only screen and (max-width: 1262px) {
+    .why-us li {
+      margin: 7px; } }
+  @media only screen and (max-width: 1250px) {
+    .why-us li {
+      margin: 5px; } }
+  @media only screen and (max-width: 1242px) {
+    .why-us li {
+      margin: 14px;
+      max-width: 345px; }
+      .why-us li:nth-child(3n) {
+        margin: 14px; }
+      .why-us li:nth-child(3n+1) {
+        margin: 14px; }
+      .why-us li:nth-child(2n) {
+        margin-right: 0; }
+      .why-us li:nth-child(2n+1) {
+        margin-left: 0; } }
+  @media only screen and (max-width: 1023px) {
+    .why-us {
+      padding: 0 25px; }
+      .why-us li {
+        margin: 12px;
+        max-width: 345px; }
+        .why-us li:nth-child(3n) {
+          margin: 12px; }
+        .why-us li:nth-child(3n+1) {
+          margin: 12px; }
+        .why-us li:nth-child(2n) {
+          margin-right: 0; }
+        .why-us li:nth-child(2n+1) {
+          margin-left: 0; } }
+  @media only screen and (max-width: 767px) {
+    .why-us li {
+      margin: 10px;
+      max-width: 345px; }
+      .why-us li:nth-child(3n) {
+        margin: 10px; }
+      .why-us li:nth-child(3n+1) {
+        margin: 10px; }
+      .why-us li:nth-child(2n) {
+        margin-right: 0; }
+      .why-us li:nth-child(2n+1) {
+        margin-left: 0; } }
+  @media only screen and (max-width: 763px) {
+    .why-us li {
+      margin: 5px;
+      max-width: 345px; }
+      .why-us li:nth-child(3n) {
+        margin: 5px; }
+      .why-us li:nth-child(3n+1) {
+        margin: 5px; }
+      .why-us li:nth-child(2n) {
+        margin-right: 0; }
+      .why-us li:nth-child(2n+1) {
+        margin-left: 0; } }
+  @media only screen and (max-width: 753px) {
+    .why-us li {
+      margin: 5px;
+      max-width: 345px; }
+      .why-us li:nth-child(3n) {
+        margin: 5px; }
+      .why-us li:nth-child(3n+1) {
+        margin: 5px; }
+      .why-us li:nth-child(2n) {
+        margin-right: 5px; }
+      .why-us li:nth-child(2n+1) {
+        margin-left: 5px; } }
+  @media only screen and (max-width: 500px) {
+    .why-us {
+      padding: 0; }
+      .why-us li {
+        max-width: inherit;
+        margin: 5px 0 !important; } }
 
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
