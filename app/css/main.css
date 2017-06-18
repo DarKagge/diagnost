@@ -3293,6 +3293,65 @@ body .capcha .text-capcha {
     line-height: 30px;
     padding-left: 45px; }
 
+@media only screen and (max-width: 1750px) {
+  .price-proverka ul {
+    text-align: center; }
+  .price-proverka li {
+    vertical-align: top;
+    display: inline-block;
+    float: none; }
+    .price-proverka li:nth-child(2n) {
+      margin: 0 10px; }
+    .price-proverka li .second-proverka-price li {
+      text-align: left; } }
+
+@media only screen and (max-width: 1650px) {
+  .price-proverka li {
+    max-width: 500px;
+    vertical-align: middle; }
+    .price-proverka li:nth-child(2n) {
+      margin: 15px; } }
+
+@media only screen and (max-width: 1023px) {
+  .price-proverka {
+    margin: 0 25px; }
+    .price-proverka li {
+      max-width: inherit;
+      width: 100%;
+      margin: 10px 0 !important;
+      min-height: inherit; }
+      .price-proverka li h2 {
+        font-family: FuturaNewDemi;
+        font-size: 28px;
+        line-height: 29px; }
+      .price-proverka li br {
+        display: none; }
+      .price-proverka li .second-proverka-price {
+        padding-top: 45px; }
+        .price-proverka li .second-proverka-price li {
+          display: block;
+          max-width: inherit;
+          padding: 0 45px;
+          border-bottom: none; }
+          .price-proverka li .second-proverka-price li h2 {
+            font-size: 20px;
+            line-height: 20px; }
+          .price-proverka li .second-proverka-price li p {
+            line-height: 20px;
+            padding-left: 25px;
+            font-size: 20px;
+            color: #414748; } }
+
+@media only screen and (max-width: 500px) {
+  .price-proverka {
+    margin: 0; }
+    .price-proverka li h2 {
+      padding: 0 25px; }
+    .price-proverka li .second-proverka-price li {
+      padding: 0 15px; }
+      .price-proverka li .second-proverka-price li h2 {
+        padding: 0; } }
+
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */

@@ -4319,6 +4319,85 @@ body .non-br{
             }
         }
     }
+    @media only screen and (max-width : 1750px){
+        ul{
+            text-align: center;
+        }
+        li{
+            vertical-align: top;
+            display: inline-block;
+            float: none;
+            &:nth-child(2n){
+                margin: 0 10px;
+            }
+            .second-proverka-price{
+                li{
+                    text-align: left;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width : 1650px){
+        li{
+            max-width: 500px;
+            vertical-align: middle;
+            &:nth-child(2n){
+                margin: 15px;
+            }
+        }
+    }
+    @media only screen and (max-width : 1023px){
+        margin: 0 25px;
+        li{
+            h2{
+                font-family:FuturaNewDemi;
+                font-size: 28px;
+                line-height: 29px;
+            }
+            max-width: inherit;
+            width: 100%;
+            margin: 10px 0 !important;
+            min-height: inherit;
+            br{
+                display: none;
+            }
+            .second-proverka-price{
+                padding-top: 45px;
+                li{
+                    display: block;
+                    max-width: inherit;
+                    padding: 0 45px;
+                    border-bottom: none;
+                    h2{
+                        font-size: 20px;
+                        line-height: 20px;
+                    }
+                    p{
+                        line-height: 20px;
+                        padding-left: 25px;
+                        font-size: 20px;
+                        color: #414748;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width : 500px){
+        margin: 0;
+        li{
+            h2{
+                padding: 0 25px;
+            }
+            .second-proverka-price{
+                li{
+                    padding: 0 15px;
+                    h2{
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 //ALWAYS END
