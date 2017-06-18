@@ -175,3 +175,28 @@ $(function() {
 		e.preventDefault();
 		lightGallery.goToNextSlide();
 	});
+
+
+
+
+
+
+
+
+
+	var proverka = $('#proverka').lightSlider({
+		adaptiveHeight:true,
+		pager:false,
+		item:1,
+		slideMargin:0,
+		controls:false,
+		loop:true
+	});
+	$(".left-arrow-r a").on("click",function (e) {
+		e.preventDefault();
+		proverka.goToPrevSlide();
+	});
+	$(".right-arrow-r a").on("click",function (e) {
+		e.preventDefault();
+		proverka.goToNextSlide();
+	});
