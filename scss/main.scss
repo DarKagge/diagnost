@@ -4237,6 +4237,7 @@ body .non-br{
     li{
         float: left;
         max-width: 540px;
+        min-height: 1060px;
         width: 100%;
         padding: 44px 0;
         border-top: 6px solid #d7e2e7;
@@ -4298,6 +4299,7 @@ body .non-br{
         li{
             float: none;
             max-width: 460px;
+            min-height:inherit;
             margin: 0 auto;
             padding: 16px 0;
             background-color: transparent;

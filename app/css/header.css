@@ -33,7 +33,7 @@ button:hover {
 
 header {
   background-image: url("../img/bg-head.jpg");
-  background-position: left;
+  background-position: left top;
   background-repeat: no-repeat;
   padding-top: 40px;
   background-size: 97%; }
