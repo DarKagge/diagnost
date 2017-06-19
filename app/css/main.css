@@ -974,7 +974,7 @@ footer {
       padding: 0 15px; } }
 
 .section-a {
-  padding: 130px 0 20px 0; }
+  padding: 0 0 20px 0; }
   .section-a li {
     margin: 40px 0;
     padding: 0 90px; }
@@ -1100,7 +1100,7 @@ footer {
       font-size: 20px; } }
 
 .in-articles-text {
-  padding: 125px 90px 95px 90px; }
+  padding: 0 90px 95px 90px; }
   .in-articles-text p {
     font-size: 28px;
     font-family: FuturaNewBook;
@@ -1136,7 +1136,7 @@ footer {
     position: relative; } }
 
 .contacts {
-  padding: 160px 75px 400px 75px; }
+  padding: 0px 75px 400px 75px; }
   .contacts form p {
     color: #414748;
     font-size: 28px;
@@ -1202,13 +1202,13 @@ footer {
     padding: 18.5px 43px; }
   @media only screen and (max-width: 1650px) {
     .contacts {
-      padding: 160px 55px 400px 55px; } }
+      padding: 0px 55px 400px 55px; } }
   @media only screen and (max-width: 1330px) {
     .contacts {
-      padding: 160px 0px 400px 0px; } }
+      padding: 0px 0px 400px 0px; } }
   @media only screen and (max-width: 991px) {
     .contacts {
-      padding: 60px 0px 400px 0px; }
+      padding: 30px 0px 400px 0px; }
       .contacts button {
         float: right; }
       .contacts form p {
@@ -1415,7 +1415,7 @@ body .capcha .text-capcha {
       font-size: 20px; } }
 
 .reviews-secondary {
-  padding: 120px 90px; }
+  padding: 20px 90px 120px 90px; }
   .reviews-secondary p {
     font-family: FuturaNewBook;
     font-size: 28px;
@@ -1428,15 +1428,14 @@ body .capcha .text-capcha {
       max-width: 1200px;
       display: inline-block;
       margin: 50px 0; }
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 1023px) {
     .reviews-secondary {
-      padding: 80px 25px; } }
+      padding: 20px 25px 80px 25px; } }
   @media only screen and (max-width: 500px) {
-    .reviews-secondary p {
-      font-size: 24px; } }
-  @media only screen and (max-width: 450px) {
     .reviews-secondary {
-      padding: 80px 15px; } }
+      padding: 10px 15px; }
+      .reviews-secondary p {
+        font-size: 24px; } }
   @media only screen and (max-width: 400px) {
     .reviews-secondary {
       padding: 0px 15px; } }
@@ -1490,18 +1489,18 @@ body .capcha .text-capcha {
       font-size: 24px; } }
 
 .portfolio {
-  padding: 120px 90px; }
+  padding: 0px 90px 50px 90px; }
   .portfolio p {
     font-size: 28px;
     font-family: FuturaNewBook;
     line-height: 33px;
     color: #414748; }
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 1023px) {
     .portfolio {
-      padding: 90px 25px; } }
+      padding: 20px 25px; } }
   @media only screen and (max-width: 450px) {
     .portfolio {
-      padding: 80px 15px; } }
+      padding: 20px 15px; } }
   @media only screen and (max-width: 400px) {
     .portfolio {
       padding: 0px 15px; } }
@@ -1601,10 +1600,10 @@ body .capcha .text-capcha {
           text-align: left; } }
 
 .portfolio-in {
-  padding: 124px 240px; }
+  padding: 20px 240px 120px 240px; }
   @media only screen and (max-width: 1350px) {
     .portfolio-in {
-      padding: 124px 0px; } }
+      padding: 20px 0px 120px 0; } }
   @media only screen and (max-width: 400px) {
     .portfolio-in {
       padding: 0; } }
@@ -1696,7 +1695,7 @@ body .capcha .text-capcha {
     float: right; } }
 
 .price-in {
-  padding: 120px 0; }
+  padding: 20px 0; }
   .price-in li {
     margin-bottom: 32px; }
   @media only screen and (max-width: 1062px) {
@@ -1729,7 +1728,7 @@ body .capcha .text-capcha {
           display: inline-block;
           margin-top: 15px;
           float: none !important; } }
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 1023px) {
     .price-in {
       padding: 50px 25px; }
       .price-in li {

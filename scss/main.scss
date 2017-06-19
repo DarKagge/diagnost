@@ -1289,7 +1289,7 @@ footer{
 }
 
 .section-a{
-    padding: 130px 0 20px 0;
+    padding: 0 0 20px 0;
     li{
         margin: 40px 0;
         padding: 0 90px;
@@ -1457,7 +1457,7 @@ footer{
 
 
 .in-articles-text{
-    padding: 125px 90px 95px 90px;
+    padding: 0 90px 95px 90px;
     p{
         font-size:28px;
         font-family:FuturaNewBook;
@@ -1511,7 +1511,7 @@ footer{
 
 
 .contacts{
-    padding: 160px 75px 400px 75px;
+    padding: 0px 75px 400px 75px;
     form{
         p{
             color: #414748;
@@ -1560,13 +1560,13 @@ footer{
         }
     }
     @media only screen and (max-width : 1650px){
-        padding: 160px 55px 400px 55px;
+        padding: 0px 55px 400px 55px;
     }
     @media only screen and (max-width : 1330px){
-        padding: 160px 0px 400px 0px;
+        padding: 0px 0px 400px 0px;
     }
     @media only screen and (max-width : 991px){
-        padding: 60px 0px 400px 0px;
+        padding: 30px 0px 400px 0px;
         button{
             float:right;
         }
@@ -1855,7 +1855,7 @@ body .capcha{
 }
 
 .reviews-secondary{
-    padding: 120px 90px;
+    padding: 20px 90px 120px 90px;
     p{
         font-family:FuturaNewBook;
         font-size:28px;
@@ -1871,16 +1871,14 @@ body .capcha{
             margin: 50px 0;
         }
     }
-    @media only screen and (max-width : 991px){
-        padding: 80px 25px;
+    @media only screen and (max-width : 1023px){
+        padding: 20px 25px 80px 25px;
     }
     @media only screen and (max-width : 500px){
         p{
             font-size: 24px;
         }
-    }
-    @media only screen and (max-width : 450px){
-     padding: 80px 15px;
+        padding: 10px 15px;
     }
     @media only screen and (max-width : 400px){
         padding: 0px 15px;
@@ -1945,18 +1943,18 @@ body .capcha{
 
 
 .portfolio{
-  padding: 120px 90px;
+  padding: 0px 90px 50px 90px;
   p{
     font-size:28px;
     font-family:FuturaNewBook;
     line-height: 33px;
     color: #414748;
   }
-    @media only screen and (max-width : 991px){
-        padding: 90px 25px;
+    @media only screen and (max-width : 1023px){
+        padding: 20px 25px;
     }
     @media only screen and (max-width : 450px){
-        padding: 80px 15px;
+        padding: 20px 15px;
     }
     @media only screen and (max-width : 400px){
         padding: 0px 15px;
@@ -2080,9 +2078,9 @@ body .capcha{
 }
 
 .portfolio-in{
-    padding: 124px 240px;
+    padding: 20px 240px 120px 240px;
     @media only screen and (max-width : 1350px){
-        padding: 124px 0px;
+        padding: 20px 0px 120px 0;
     }
     @media only screen and (max-width : 400px){
         padding: 0;
@@ -2203,7 +2201,7 @@ body .capcha{
 
 
 .price-in{
-    padding: 120px 0;
+    padding: 20px 0;
     li{
         margin-bottom: 32px;
     }
@@ -2247,7 +2245,7 @@ body .capcha{
             }
         }
     }
-    @media only screen and (max-width : 991px){
+    @media only screen and (max-width : 1023px){
         padding: 50px 25px;
         li{
             max-width: 345px;
