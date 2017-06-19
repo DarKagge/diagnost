@@ -2,6 +2,7 @@
 @import "vars.scss";
 @import "../libs/font-awesome/css/font-awesome.min.css";
 @import "../libs/lightslider/dist/css/lightslider.min.css";
+@import "../libs/magnific-popup/dist/magnific-popup.css";
 
 
 body{
@@ -379,3 +380,148 @@ body .hamburger-inner::after{
 	height: 2px;
 }
 @import "../app/libs/css-hamburgers/_sass/hamburgers/hamburgers.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
+.callback-popup{
+	position: relative;
+	max-width: 550px;
+	margin: 0 auto;
+	background-color: #fff;
+	.mfp-close{
+		color: #545454;
+		font-size: 50px;
+		right: 10px;
+		top: 10px;
+		&:hover{
+			color: #888a8b;
+		}
+	}
+}
+.all-popup-title{
+	background-color: #2d2d2d;
+	display: block;
+	text-align: center;
+	width: 100%;
+
+	h2{
+		font-size:36px;
+		font-family:FuturaNewDemi;
+		color: #fff;
+		padding: 5px 0;
+	}
+}
+.all-form-popup{
+	text-align: center;
+	padding: 43px 0;
+
+	form{
+		padding: 0 95px;
+	}
+	h2{
+
+		font-size: 28px;
+		line-height: 28px;
+		padding-bottom: 19px;
+	}
+	p{
+		font-size: 20px;
+	}
+	input{
+		max-width:360px;
+		border: 2px solid #d2d7da;
+		display: block;
+		margin: 20px auto;
+		padding: 10.3px 18px;
+		width: 100%;
+		box-shadow: 1px 1px 1px rgba(0,0,0, 0.5);
+	}
+	button{
+		border: 5px solid #ff0920;
+		background-color: #ff0920;
+		color: #fff;
+		font-size:20px;
+		text-transform: uppercase;
+		display: block;
+		width: 100%;
+		padding: 13px 0;
+		margin-top: 28px;
+		&:hover{
+			background-color: transparent;
+			color: #000;
+			box-shadow: 0 5px 40px rgba(255,9,32, 0.9);
+		}
+	}
+}
+
+.time-to-call{
+	h3{
+		font-size: 28px;
+		padding-bottom: 19px;
+	}
+	text-align: left;
+	p{
+		float: right;
+		margin-top: 5px;
+		color: #414748;
+	}
+}
+
+
+
+.time-p{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	border: 2px solid #d2d7da;
+	max-width: 134px;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	margin: 0 5px;
+	line-height: 50px;
+	font-size: 20px;
+	&:first-child{
+		margin-left: 0;
+	}
+	&:nth-child(2n){
+		margin-right: 0;
+	}
+
+	a{
+		display: block;
+		border-left: 2px solid #d2d7da;
+		border-top: 1px solid #d2d7da;
+		border-bottom: 1px solid #d2d7da;
+		width: 25px;
+		height: 24px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+.inp{
+	right: 0;
+	top: -1px;
+	position: absolute;
+}
+
+.bot-inp{
+	a{
+		background-image: url("../img/arrow-down.png");
+	}
+}
+.top-inp{
+	a{
+		background-image: url("../img/arrow-up.png");
+	}
+}
