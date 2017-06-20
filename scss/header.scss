@@ -24,6 +24,7 @@ a,button,input,textarea{
 	&:focus{
 		outline: 0;
 		border: 0;
+		text-decoration: none;
 	}
 }
 
@@ -407,6 +408,12 @@ body .hamburger-inner::after{
 			color: #888a8b;
 		}
 	}
+	@media only screen and (max-width : 400px){
+		.mfp-close{
+			right: 5px;
+			top: 5px;
+		}
+	}
 }
 .all-popup-title{
 	background-color: #2d2d2d;
@@ -420,11 +427,15 @@ body .hamburger-inner::after{
 		color: #fff;
 		padding: 5px 0;
 	}
+	@media only screen and (max-width : 400px){
+		h2{
+			font-size: 27px;
+		}
+	}
 }
 .all-form-popup{
 	text-align: center;
 	padding: 43px 0;
-
 	form{
 		padding: 0 95px;
 	}
@@ -433,9 +444,11 @@ body .hamburger-inner::after{
 		font-size: 28px;
 		line-height: 28px;
 		padding-bottom: 19px;
+		color: #414748;
 	}
 	p{
 		font-size: 20px;
+
 	}
 	input{
 		max-width:360px;
@@ -445,7 +458,7 @@ body .hamburger-inner::after{
 		padding: 7.3px 18px;
 		font-size: 20px;
 		width: 100%;
-		box-shadow: 1px 1px 1px rgba(0,0,0, 0.5);
+		box-shadow: inset 1px 1px 8px #d2d7da
 	}
 	button{
 		border: 5px solid #ff0920;
@@ -463,18 +476,38 @@ body .hamburger-inner::after{
 			box-shadow: 0 5px 40px rgba(255,9,32, 0.9);
 		}
 	}
+	@media only screen and (max-width : 600px){
+		form{
+			padding: 0 40px;
+		}
+		input{
+			max-width: inherit;
+		}
+	}
+	@media only screen and (max-width : 400px){
+		form{
+			padding: 0 10px;
+		}
+	}
 }
 
 .time-to-call{
 	h3{
 		font-size: 28px;
 		padding-bottom: 19px;
+		color: #414748;
 	}
 	text-align: left;
 	p{
 		float: right;
 		margin-top: 5px;
 		color: #414748;
+	}
+	@media only screen and (max-width : 600px){
+		p{
+			float: none;
+			display: inline-block;
+		}
 	}
 }
 

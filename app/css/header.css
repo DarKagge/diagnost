@@ -19,7 +19,8 @@ a, button, input, textarea {
   transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease; }
   a:focus, button:focus, input:focus, textarea:focus {
     outline: 0;
-    border: 0; }
+    border: 0;
+    text-decoration: none; }
 
 .inner {
   max-width: 1740px;
@@ -412,6 +413,10 @@ body .hamburger-inner::after {
     top: 10px; }
     .callback-popup .mfp-close:hover {
       color: #888a8b; }
+  @media only screen and (max-width: 400px) {
+    .callback-popup .mfp-close {
+      right: 5px;
+      top: 5px; } }
 
 .all-popup-title {
   background-color: #2d2d2d;
@@ -423,6 +428,9 @@ body .hamburger-inner::after {
     font-family: FuturaNewDemi;
     color: #fff;
     padding: 5px 0; }
+  @media only screen and (max-width: 400px) {
+    .all-popup-title h2 {
+      font-size: 27px; } }
 
 .all-form-popup {
   text-align: center;
@@ -432,7 +440,8 @@ body .hamburger-inner::after {
   .all-form-popup h2 {
     font-size: 28px;
     line-height: 28px;
-    padding-bottom: 19px; }
+    padding-bottom: 19px;
+    color: #414748; }
   .all-form-popup p {
     font-size: 20px; }
   .all-form-popup input {
@@ -443,8 +452,8 @@ body .hamburger-inner::after {
     padding: 7.3px 18px;
     font-size: 20px;
     width: 100%;
-    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+    -webkit-box-shadow: inset 1px 1px 8px #d2d7da;
+    box-shadow: inset 1px 1px 8px #d2d7da; }
   .all-form-popup button {
     border: 5px solid #ff0920;
     background-color: #ff0920;
@@ -460,16 +469,29 @@ body .hamburger-inner::after {
       color: #000;
       -webkit-box-shadow: 0 5px 40px rgba(255, 9, 32, 0.9);
       box-shadow: 0 5px 40px rgba(255, 9, 32, 0.9); }
+  @media only screen and (max-width: 600px) {
+    .all-form-popup form {
+      padding: 0 40px; }
+    .all-form-popup input {
+      max-width: inherit; } }
+  @media only screen and (max-width: 400px) {
+    .all-form-popup form {
+      padding: 0 10px; } }
 
 .time-to-call {
   text-align: left; }
   .time-to-call h3 {
     font-size: 28px;
-    padding-bottom: 19px; }
+    padding-bottom: 19px;
+    color: #414748; }
   .time-to-call p {
     float: right;
     margin-top: 5px;
     color: #414748; }
+  @media only screen and (max-width: 600px) {
+    .time-to-call p {
+      float: none;
+      display: inline-block; } }
 
 .time-p {
   display: inline-block;

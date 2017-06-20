@@ -695,7 +695,9 @@ body textarea:required:valid {
     margin-top: 20px;
     color: #414748;
     width: 100%;
-    padding: 10.5px 18px; }
+    padding: 10.5px 18px;
+    -webkit-box-shadow: inset 1px 1px 8px #d2d7da;
+    box-shadow: inset 1px 1px 8px #d2d7da; }
     .right-form input::-webkit-input-placeholder {
       color: #414748;
       font-size: 20px;
@@ -721,8 +723,12 @@ body textarea:required:valid {
     font-size: 20px;
     color: #fff;
     width: 100%;
-    padding: 19px 0;
-    margin-top: 20px; }
+    padding: 13px 0;
+    margin-top: 20px;
+    border: 5px solid #ff0920; }
+    .right-form button:hover {
+      background-color: transparent;
+      color: #000; }
   @media only screen and (max-width: 1600px) {
     .right-form h2 {
       font-size: 40px; } }
