@@ -437,6 +437,8 @@ body .hamburger-inner::after {
   padding: 43px 0; }
   .all-form-popup form {
     padding: 0 95px; }
+  .all-form-popup span {
+    color: #ff0920; }
   .all-form-popup h2 {
     font-size: 28px;
     line-height: 28px;
@@ -463,12 +465,12 @@ body .hamburger-inner::after {
     display: block;
     width: 100%;
     padding: 13px 0;
-    margin-top: 28px; }
+    margin-top: 28px;
+    -webkit-box-shadow: 0 10px 40px rgba(255, 9, 32, 0.7);
+    box-shadow: 0 10px 40px rgba(255, 9, 32, 0.7); }
     .all-form-popup button:hover {
       background-color: transparent;
-      color: #000;
-      -webkit-box-shadow: 0 5px 40px rgba(255, 9, 32, 0.9);
-      box-shadow: 0 5px 40px rgba(255, 9, 32, 0.9); }
+      color: #000; }
   @media only screen and (max-width: 600px) {
     .all-form-popup form {
       padding: 0 40px; }
@@ -529,3 +531,22 @@ body .hamburger-inner::after {
 
 .top-inp a {
   background-image: url("../img/arrow-up.png"); }
+
+.all-form-popup-b {
+  max-width: 910px; }
+  .all-form-popup-b .left-all-img {
+    width: 50%;
+    float: left;
+    height: 320px; }
+    .all-form-popup-b .left-all-img img {
+      margin-left: -65px; }
+  .all-form-popup-b .right-all-text {
+    width: 50%;
+    float: left; }
+    .all-form-popup-b .right-all-text form {
+      text-align: left;
+      padding-left: 0;
+      padding-right: 70px; }
+    .all-form-popup-b .right-all-text input {
+      margin-left: 0;
+      max-width: inherit; }

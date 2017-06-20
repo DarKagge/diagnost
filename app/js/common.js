@@ -27,6 +27,7 @@ $(function() {
 		var ref = btn.closest('form').find('[required]');
 		var msg = btn.closest('form').find('input, textarea');
 		var send_btn = btn.closest('form').find('[name=send]');
+		var send_options = btn.closest('form').find('[name=campaign_token]');
 
 		$(ref).each(function() {
 			if ($(this).val() == '') {
@@ -60,30 +61,52 @@ $(function() {
 			$(send_btn).each(function() {
 				$(this).attr('disabled', true);
 			});
-			var form = $(this).closest('form'), name = form.find('[name=name]').val();
-			var formData = new FormData(form[0]);
-			$.ajax({
-				type: 'POST',
-				url: '/app/mail.php',
-				data: formData,
-				processData: false,
-				contentType: false,
-				success: function(data) {
-					$("a[name=upload]").text("Прикрепить реквизиты");
-					$.magnificPopup.close();
-					if(name){
-						$( "#thankyou .name" ).text(name);
-					}else{
-						$( "#thankyou .name" ).text("");
-					}
-
-					$("[href='#thankyou']").click();
-					form.trigger("reset");
-					setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
-					// Настройки модального окна после удачной отправки
-				},
-				error: function(xhr, str) {
-					alert('Возникла ошибка: ' + xhr.responseCode);
+			$(send_options).each(function() {
+				var form = $(this).closest('form'), name = form.find('.name').val();
+				if ($(this).val() == '') {
+					$.ajax({
+						type: 'POST',
+						url: 'mail.php',
+						data: msg,
+						success: function() {
+							$( "#modal_callback_ok h4" ).remove();
+							$( "#modal_callback_ok" ).prepend("<h4>"+name+",</h4>");
+							$('form').trigger("reset");
+							setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
+							// Настройки модального окна после удачной отправки
+							$(".fancybox-close").click();
+							$('div.md-show').removeClass('md-show');
+							$("#call_ok")[0].click();
+						},
+						error: function(xhr, str) {
+							alert('Возникла ошибка: ' + xhr.responseCode);
+						}
+					});
+				} else {
+					$.ajax({
+						type: 'POST',
+						url: 'mail.php',
+						data: msg,
+						success:
+							$.ajax({
+								type: 'POST',
+								url: 'https://app.getresponse.com/add_subscriber.html',
+								data: msg,
+								statusCode: {0:function() {
+									$( "#modal_callback_ok h4" ).remove();
+									$( "#modal_callback_ok" ).prepend("<h4>"+name+",</h4>");
+									$('form').trigger("reset");
+									setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
+									$(".fancybox-close").click();
+									// Настройки модального окна после удачной отправки
+									$('div.md-show').removeClass('md-show');
+									$("#call_ok")[0].click();
+								}}
+							}),
+						error:  function(xhr, str) {
+							alert('Возникла ошибка: ' + xhr.responseCode);
+						}
+					});
 				}
 			});
 		}

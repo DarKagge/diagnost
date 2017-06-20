@@ -439,6 +439,9 @@ body .hamburger-inner::after{
 	form{
 		padding: 0 95px;
 	}
+	span{
+		color: #ff0920;
+	}
 	h2{
 
 		font-size: 28px;
@@ -470,10 +473,10 @@ body .hamburger-inner::after{
 		width: 100%;
 		padding: 13px 0;
 		margin-top: 28px;
+		box-shadow: 0 10px 40px rgba(255,9,32, 0.7);
 		&:hover{
 			background-color: transparent;
 			color: #000;
-			box-shadow: 0 5px 40px rgba(255,9,32, 0.9);
 		}
 	}
 	@media only screen and (max-width : 600px){
@@ -557,5 +560,31 @@ body .hamburger-inner::after{
 .top-inp{
 	a{
 		background-image: url("../img/arrow-up.png");
+	}
+}
+
+
+.all-form-popup-b{
+	max-width: 910px;
+	.left-all-img{
+		width: 50%;
+		float: left;
+		height: 320px;
+		img{
+			margin-left: -65px;
+		}
+	}
+	.right-all-text{
+		width: 50%;
+		float: left;
+		form{
+			text-align: left;
+			padding-left: 0;
+			padding-right: 70px;
+		}
+		input{
+			margin-left: 0;
+			max-width: inherit;
+		}
 	}
 }

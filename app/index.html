@@ -468,6 +468,9 @@
 					<h2>Хочешь самостоятельно подобрать<br>
 						автомобиль, но не хватает опыта?</h2>
 					<p>Получи <span>бесплатное руководство</span> по самостоятельному <br>подбору подержанного автомобиля</p>
+					<input type="hidden" name="project_name" value="Diagnost">
+					<input type="hidden" name="admin_email" value="ElectroDeggi33759@yandex.ru">
+					<input type="hidden" name="form_subject" value="Регистрация">
 					<input type="text" placeholder="Как Вас зовут?" required>
 					<input type="text" placeholder="Ваш Email" required>
 					<button type="submit" name="send">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
@@ -508,7 +511,7 @@
                         <h3><b>Тольятти</b>  8 (8482) 61-84-24</h3>
                     </div>
                     <div class="popup-but">
-                        <a href="#">ЗАКАЗАТЬ ЗВОНОК</a>
+                        <a href="#popup-form" class="open-popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
                     </div>
                 </div>
 		</div>
@@ -518,10 +521,10 @@
 	<div class="hidden">
 		<div id="modal_callback_ok">
 			<div class="all-popup-title">
-				<h2>Заявка на консультацию</h2>
+				<h2>Отправлено</h2>
 			</div>
 			<h3>Спасибо за заявку,</h3>
-			<p>наш специалист перезвонит Вам в течении 10 минут!</p>
+			<p>наш специалист перезвонит <br>Вам в течении 10 минут!</p>
 		</div>
 		<a id="call_ok" class="modal" href="#modal_callback_ok"></a>
 	</div>
@@ -538,6 +541,9 @@
 			<h2>Заполните форму и мы<br>
 				перезвоним Вам в течение15 минут.</h2>
 			<form>
+				<input type="hidden" name="project_name" value="Diagnost">
+				<input type="hidden" name="admin_email" value="ElectroDeggi33759@yandex.ru">
+				<input type="hidden" name="form_subject" value="Регистрация">
 				<input type="text" placeholder="Ваш имя" required>
 				<input type="text" placeholder="Ваш номер телефона" required>
 				<div class="time-to-call">
@@ -580,12 +586,41 @@
 			<h2>Заполните форму и мы<br>
 				перезвоним Вам в течение15 минут.</h2>
 			<form>
+				<input type="hidden" name="project_name" value="Diagnost">
+				<input type="hidden" name="admin_email" value="ElectroDeggi33759@yandex.ru">
+				<input type="hidden" name="form_subject" value="Регистрация">
 				<input type="text" placeholder="Ваш имя" required>
 				<input type="text" placeholder="Ваш номер телефона" required>
 				<button type="submit" name="send">ОТПРАВИТЬ</button>
 			</form>
 		</div>
 	</div>
+
+
+	<div id="popup-form" class="callback-popup all-form-popup-b mfp-hide">
+		<div class="all-popup-title">
+			<h2>Получи брошюру</h2>
+		</div>
+		<div class="all-form-popup clearfix">
+			<h2>Получи <span>бесплатное руководство</span> <br>по самостоятельному подбору подержанного автомобиля</h2>
+			<div class="left-all-img">
+				<img src="img/book2.png" alt="">
+			</div>
+			<div class="right-all-text">
+				<form>
+					<input type="hidden" name="project_name" value="Diagnost">
+					<input type="hidden" name="admin_email" value="ElectroDeggi33759@yandex.ru">
+					<input type="hidden" name="form_subject" value="Регистрация">
+					<input type="text" placeholder="Ваш имя" required>
+					<input type="text" placeholder="Ваш email" required>
+					<input type="text" placeholder="Ваш номер телефона" required>
+					<button type="submit" name="send">ОТПРАВИТЬ</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
 
 
 
