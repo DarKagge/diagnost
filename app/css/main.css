@@ -94,12 +94,9 @@ body textarea:required:valid {
 
 .amenities {
   background-color: #eaf3f6;
-  left: 90px;
   position: relative;
   margin-bottom: 70px;
   padding-bottom: 60px; }
-  .amenities .inner {
-    right: 90px; }
   @media only screen and (max-width: 1750px) {
     .amenities {
       left: 0; }
@@ -167,7 +164,10 @@ body textarea:required:valid {
     text-align: left;
     margin: 29.5px 30px;
     background-color: #fff;
-    max-width: 750px; }
+    max-width: 750px;
+    background-size: cover; }
+    .am-items li:hover .title-item {
+      background-size: 110%; }
     .am-items li p {
       font-size: 20px;
       font-family: FuturaNewBook; }
@@ -185,19 +185,21 @@ body textarea:required:valid {
           margin-left: 0; } }
     @media only screen and (max-width: 1450px) {
       .am-items li {
-        max-width: 600px; } }
+        max-width: 600px; }
+        .am-items li:hover .title-item {
+          background-size: 150%; } }
     @media only screen and (max-width: 1231px) {
       .am-items li {
         max-width: 500px; } }
     @media only screen and (max-width: 1031px) {
       .am-items li {
         max-width: 400px; }
-        .am-items li .title-item img {
+        .am-items li .title-item {
           height: 300px; }
-        .am-items li .title-item h2 {
-          font-size: 28px;
-          line-height: 30px;
-          left: 21px; }
+          .am-items li .title-item h2 {
+            font-size: 28px;
+            line-height: 30px;
+            left: 21px; }
         .am-items li .price-am {
           text-align: center; }
           .am-items li .price-am a {
@@ -218,7 +220,10 @@ body textarea:required:valid {
           margin: 10px; } }
   .am-items .title-item {
     height: 363px;
-    position: relative; }
+    position: relative;
+    width: 100%;
+    -webkit-transition: 2s all;
+    transition: 2s all; }
     .am-items .title-item h2 {
       position: absolute;
       bottom: 25px;
@@ -229,9 +234,6 @@ body textarea:required:valid {
       font-family: FuturaNewDemi; }
     .am-items .title-item img {
       width: 100%; }
-    @media only screen and (max-width: 1450px) {
-      .am-items .title-item {
-        height: auto; } }
   @media only screen and (max-width: 1023px) {
     .am-items {
       padding: 0 25px; }
@@ -262,10 +264,7 @@ body textarea:required:valid {
 
 .auto-slide {
   background-color: #212425;
-  position: relative;
-  right: 90px; }
-  .auto-slide .inner {
-    left: 90px; }
+  position: relative; }
   .auto-slide .all-title {
     position: absolute;
     left: 45%;
@@ -402,15 +401,7 @@ body textarea:required:valid {
 .reviews {
   margin: 107px 0;
   background-color: #ebf3f6;
-  position: relative;
-  left: 90px; }
-  .reviews .inner {
-    right: 90px; }
-  @media only screen and (max-width: 1750px) {
-    .reviews {
-      left: 0; }
-      .reviews .inner {
-        right: 0; } }
+  position: relative; }
   @media only screen and (max-width: 1023px) {
     .reviews {
       padding: 0 25px;
@@ -525,15 +516,7 @@ body textarea:required:valid {
 
 .quest {
   background-color: #ebf3f6;
-  position: relative;
-  right: 90px; }
-  .quest .inner {
-    left: 90px; }
-  @media only screen and (max-width: 1750px) {
-    .quest {
-      right: 0; }
-      .quest .inner {
-        left: 0; } }
+  position: relative; }
   @media only screen and (max-width: 700px) {
     .quest {
       padding: 0 15px; } }
@@ -882,16 +865,8 @@ footer {
 
 .eror {
   background-color: #eaf3f6;
-  left: 90px;
   position: relative;
   margin-bottom: 90px; }
-  .eror .inner {
-    right: 90px; }
-  @media only screen and (max-width: 1750px) {
-    .eror {
-      left: 0px; }
-      .eror .inner {
-        right: 0px; } }
   @media only screen and (max-width: 1300px) {
     .eror {
       padding: 0 25px; } }
@@ -963,18 +938,12 @@ footer {
 .article {
   background-color: #eaf3f6;
   position: relative;
-  left: 90px;
   margin-bottom: 90px; }
-  .article .inner {
-    right: 90px; }
   @media only screen and (max-width: 1750px) {
-    .article {
-      left: 0px; }
-      .article .inner {
-        right: 0px;
-        padding: 0 25px; }
-      .article .all-title {
-        left: auto; } }
+    .article .inner {
+      padding: 0 25px; }
+    .article .all-title {
+      left: auto; } }
   @media only screen and (max-width: 500px) {
     .article .inner {
       padding: 0 15px; } }
@@ -2004,16 +1973,11 @@ body .capcha .text-capcha {
 
 .recomend-crime {
   position: relative;
-  left: 90px;
   background-color: #eaf3f6;
-  border-bottom: 7px solid #cddadf;
-  border-left: 7px solid #cddadf;
-  border-top: 7px solid #cddadf;
+  border: 7px solid #cddadf;
   margin-bottom: 89px;
   text-align: center;
   padding-bottom: 120px; }
-  .recomend-crime .inner {
-    right: 90px; }
   .recomend-crime h2 {
     padding-top: 54px;
     font-size: 36px;
@@ -2058,15 +2022,7 @@ body .capcha .text-capcha {
   background-position: center top;
   background-size: cover;
   position: relative;
-  right: 90px;
   padding-bottom: 90px; }
-  .right-ots .inner {
-    left: 90px; }
-  @media only screen and (max-width: 1750px) {
-    .right-ots {
-      right: 0; }
-      .right-ots .inner {
-        left: 0; } }
   @media only screen and (max-width: 1023px) {
     .right-ots {
       padding-bottom: 30px; } }
@@ -2210,10 +2166,7 @@ body .capcha .text-capcha {
   background-position: center;
   text-align: center;
   margin: 80px 0;
-  position: relative;
-  left: 90px; }
-  .call-back-c .inner {
-    right: 90px; }
+  position: relative; }
   .call-back-c form {
     margin: 120px 0;
     display: inline-block;
@@ -2274,11 +2227,8 @@ body .capcha .text-capcha {
 .left-ots {
   position: relative;
   background-color: #eaf3f6;
-  left: 90px;
   padding-bottom: 90px;
   margin: 50px 0; }
-  .left-ots .inner {
-    right: 92px; }
   @media only screen and (max-width: 1750px) {
     .left-ots {
       left: 0; }

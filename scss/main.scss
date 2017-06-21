@@ -130,13 +130,9 @@ body textarea:required:valid{
 
 .amenities{
     background-color: #eaf3f6;
-    left: 90px;
     position: relative;
     margin-bottom: 70px;
     padding-bottom: 60px;
-    .inner{
-        right: 90px;
-    }
     @media only screen and (max-width : 1750px){
         left: 0;
         .inner{
@@ -222,6 +218,12 @@ body textarea:required:valid{
         margin: 29.5px 30px;
         background-color: #fff;
         max-width: 750px;
+        background-size: cover;
+        &:hover{
+            .title-item{
+                background-size: 110%;
+            }
+        }
         p{
             font-size: 20px;
             font-family:FuturaNewBook;
@@ -232,6 +234,7 @@ body textarea:required:valid{
                 padding-top: 20px;
             }
         }
+
         @media only screen and (max-width : 1750px){
             margin: 29.5px 14px;
             &:nth-child(2n){
@@ -243,6 +246,11 @@ body textarea:required:valid{
         }
         @media only screen and (max-width : 1450px){
             max-width: 600px;
+            &:hover{
+                .title-item{
+                    background-size: 150%;
+                }
+            }
         }
         @media only screen and (max-width : 1231px){
             max-width: 500px;
@@ -250,9 +258,7 @@ body textarea:required:valid{
         @media only screen and (max-width : 1031px){
             max-width: 400px;
             .title-item{
-                img{
-                    height: 300px;
-                }
+                height: 300px;
                 h2{
                     font-size: 28px;
                     line-height: 30px;
@@ -291,6 +297,8 @@ body textarea:required:valid{
     .title-item{
         height: 363px;
         position: relative;
+        width: 100%;
+        transition: 2s all;
         h2{
             position: absolute;
             bottom: 25px;
@@ -304,7 +312,7 @@ body textarea:required:valid{
             width: 100%;
         }
         @media only screen and (max-width : 1450px){
-            height: auto;
+
         }
     }
     @media only screen and (max-width : 1023px){
@@ -347,10 +355,6 @@ body textarea:required:valid{
 .auto-slide{
     background-color: #212425;
     position: relative;
-    right: 90px;
-    .inner{
-        left: 90px;
-    }
     .all-title{
         position: absolute;
         left: 45%;
@@ -535,16 +539,6 @@ body textarea:required:valid{
     margin: 107px 0;
     background-color: #ebf3f6;
     position: relative;
-    left: 90px;
-    .inner{
-        right: 90px;
-    }
-    @media only screen and (max-width : 1750px){
-        left: 0;
-        .inner{
-            right: 0;
-        }
-    }
     @media only screen and (max-width : 1023px){
         padding: 0 25px;
         margin: 50px 0;
@@ -701,16 +695,6 @@ body textarea:required:valid{
 .quest{
     background-color: #ebf3f6;
     position: relative;
-    right: 90px;
-    .inner{
-        left: 90px;
-    }
-    @media only screen and (max-width : 1750px){
-        right: 0;
-        .inner{
-            left: 0;
-        }
-    }
     @media only screen and (max-width : 700px){
         padding: 0 15px;
     }
@@ -1159,18 +1143,8 @@ footer{
 
 .eror{
     background-color:#eaf3f6;
-    left: 90px;
     position: relative;
     margin-bottom: 90px;
-    .inner{
-        right: 90px;
-    }
-    @media only screen and (max-width : 1750px){
-        left: 0px;
-        .inner{
-            right: 0px;
-        }
-    }
   @media only screen and (max-width : 1300px){
     padding: 0 25px;
   }
@@ -1272,15 +1246,9 @@ footer{
 .article{
     background-color: #eaf3f6;
     position: relative;
-    left: 90px;
     margin-bottom: 90px;
-    .inner{
-        right: 90px;
-    }
     @media only screen and (max-width : 1750px){
-        left: 0px;
         .inner{
-            right: 0px;
             padding: 0 25px;
         }
         .all-title{
@@ -2572,17 +2540,11 @@ body .capcha{
 
 .recomend-crime{
     position: relative;
-    left: 90px;
     background-color: #eaf3f6;
-    border-bottom: 7px solid #cddadf;
-    border-left: 7px solid #cddadf;
-    border-top: 7px solid #cddadf;
+    border: 7px solid #cddadf;
     margin-bottom: 89px;
     text-align: center;
     padding-bottom: 120px;
-    .inner{
-        right: 90px;
-    }
     h2{
         padding-top: 54px;
         font-size:36px;
@@ -2637,18 +2599,7 @@ body .non-br{
     background-position: center top;
     background-size: cover;
     position: relative;
-    right: 90px;
     padding-bottom: 90px;
-
-    .inner{
-        left: 90px;
-    }
-    @media only screen and (max-width : 1750px){
-        right:0;
-        .inner{
-            left: 0;
-        }
-    }
     @media only screen and (max-width : 1023px){
         padding-bottom: 30px;
     }
@@ -2829,10 +2780,6 @@ body .non-br{
     text-align: center;
     margin: 80px 0;
     position: relative;
-    left: 90px;
-    .inner{
-        right: 90px;
-    }
     form{
         margin: 120px 0;
         display: inline-block;
@@ -2916,12 +2863,8 @@ body .non-br{
 .left-ots{
     position: relative;
     background-color: #eaf3f6;
-    left: 90px;
     padding-bottom: 90px;
     margin: 50px 0;
-    .inner{
-        right: 92px;
-    }
     @media only screen and (max-width : 1750px){
         left: 0;
         .inner{
