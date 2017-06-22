@@ -222,8 +222,10 @@ body textarea:required:valid {
     height: 363px;
     position: relative;
     width: 100%;
-    -webkit-transition: 2s all;
-    transition: 2s all; }
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+    background-position: center;
+    background-size: 120%; }
     .am-items .title-item h2 {
       position: absolute;
       bottom: 25px;
@@ -238,7 +240,9 @@ body textarea:required:valid {
     .am-items {
       padding: 0 25px; }
       .am-items li {
-        margin: 29.5px 12px; } }
+        margin: 29.5px 12px; }
+        .am-items li .title-item:hover {
+          background-size: 200%; } }
 
 .price-am {
   margin-top: 35px; }
@@ -265,6 +269,17 @@ body textarea:required:valid {
 .auto-slide {
   background-color: #212425;
   position: relative; }
+  .auto-slide .slider-auto-inputs {
+    position: absolute;
+    right: 0;
+    bottom: 130px;
+    padding: 0; }
+    @media only screen and (max-width: 1650px) {
+      .auto-slide .slider-auto-inputs {
+        bottom: 100px; } }
+    @media only screen and (max-width: 1450px) {
+      .auto-slide .slider-auto-inputs {
+        bottom: 50px; } }
   .auto-slide .all-title {
     position: absolute;
     left: 45%;
@@ -357,8 +372,10 @@ body textarea:required:valid {
     font-family: FuturaNewBook; }
   @media only screen and (max-width: 1450px) {
     .right-text-auto {
-      padding: 135px 0 0 0;
-      text-align: center; } }
+      padding: 160px 0 0 0;
+      text-align: center; }
+      .right-text-auto p {
+        padding-bottom: 25px; } }
   @media only screen and (max-width: 1023px) {
     .right-text-auto {
       padding-top: 25px; } }

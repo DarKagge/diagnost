@@ -298,7 +298,9 @@ body textarea:required:valid{
         height: 363px;
         position: relative;
         width: 100%;
-        transition: 2s all;
+        transition:all 1s linear;
+        background-position: center;
+        background-size: 120%;
         h2{
             position: absolute;
             bottom: 25px;
@@ -319,7 +321,14 @@ body textarea:required:valid{
         padding: 0 25px;
         li{
             margin: 29.5px 12px;
+            .title-item{
+                &:hover{
+                    background-size: 200%;
+                }
+            }
         }
+
+
     }
 }
 
@@ -355,6 +364,18 @@ body textarea:required:valid{
 .auto-slide{
     background-color: #212425;
     position: relative;
+    .slider-auto-inputs{
+        position: absolute;
+        right: 0;
+        bottom: 130px;
+        padding: 0;
+        @media only screen and (max-width : 1650px){
+            bottom: 100px;
+        }
+        @media only screen and (max-width : 1450px){
+            bottom: 50px;
+        }
+    }
     .all-title{
         position: absolute;
         left: 45%;
@@ -475,8 +496,11 @@ body textarea:required:valid{
 
     }
     @media only screen and (max-width : 1450px){
-        padding: 135px 0 0 0 ;
+        padding: 160px 0 0 0 ;
         text-align: center;
+        p{
+            padding-bottom: 25px;
+        }
     }
     @media only screen and (max-width : 1023px){
         padding-top: 25px;

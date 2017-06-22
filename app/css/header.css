@@ -37,6 +37,7 @@ header {
   background-image: url("../img/bg-head.jpg");
   background-position: left top;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding-top: 40px;
   background-size: 100%; }
   @media only screen and (max-width: 1750px) {
