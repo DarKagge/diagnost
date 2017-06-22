@@ -375,6 +375,12 @@ body textarea:required:valid{
         @media only screen and (max-width : 1450px){
             bottom: 50px;
         }
+        @media only screen and (max-width : 1023px){
+            left: 50%;
+            bottom: 15px;
+            right: auto;
+            margin-left: -101.5px;
+        }
     }
     .all-title{
         position: absolute;
@@ -424,6 +430,9 @@ body textarea:required:valid{
         }
     }
     @media only screen and (max-width : 1320px){
+        .lSSlideWrapper .lSSlide{
+            min-height: 560px !important;
+        }
         padding: 0 25px;
        .lSSlideOuter .lSPager.lSpg{
             left: 55%;
@@ -440,17 +449,39 @@ body textarea:required:valid{
             width: 100%;
         }
         .lSSlideOuter .lSPager.lSpg{
-            left: 50%;
-            margin-left: -92px;
-            bottom: 200px;
+            left: 0;
+            bottom: 0px;
+            margin: 25px 0 0 0 !important;
+            position: relative;
+
+        }
+        .lSSlideOuter{
+            min-height: 850px;
         }
         .slider-auto-inputs{
-            padding: 70px 0;
-            margin-top: 70px;
+            position: relative;
+            bottom: 0;
+            margin-left: 0;
+            margin-top: 30px;
+            margin-bottom: 35px;
+            left: 0;
+        }
+        .lSSlideWrapper .lSSlide{
+            min-height: inherit !important;
+        }
+        .right-text-auto {
+            p{
+                min-height: inherit;
+            }
         }
         .arrow-slider-a{
             text-align: center;
             padding: 0;
+        }
+    }
+    @media only screen and (max-width : 830px){
+        .lSSlideOuter{
+            min-height: inherit;
         }
     }
     @media only screen and (max-width : 512px){
@@ -493,6 +524,10 @@ body textarea:required:valid{
         font-size: 20px;
         color: #fff;
         font-family:FuturaNewBook;
+        padding-right: 200px;
+        @media only screen and (max-width : 1650px){
+            padding-right: 0px;
+        }
 
     }
     @media only screen and (max-width : 1450px){
@@ -500,6 +535,11 @@ body textarea:required:valid{
         text-align: center;
         p{
             padding-bottom: 25px;
+        }
+    }
+    @media only screen and (max-width : 1320px){
+        p{
+            min-height: 350px;
         }
     }
     @media only screen and (max-width : 1023px){
@@ -563,6 +603,11 @@ body textarea:required:valid{
     margin: 107px 0;
     background-color: #ebf3f6;
     position: relative;
+    .arrow-slider-r{
+        position: absolute;
+        right: 25px;
+        top: 55px;
+    }
     @media only screen and (max-width : 1023px){
         padding: 0 25px;
         margin: 50px 0;
@@ -571,6 +616,12 @@ body textarea:required:valid{
         }
         div[class*=col-md]{
             width: 100%;
+        }
+        .arrow-slider-r{
+            position: relative;
+            padding: 20px 0;
+            right: auto;
+            top: auto;
         }
     }
     @media only screen and (max-width : 500px){
@@ -614,7 +665,7 @@ body textarea:required:valid{
     @media only screen and (max-width : 1023px){
         .lSSlideOuter .lSPager.lSpg{
             position: relative;
-            top: -180px;
+            top: 0px;
         }
     }
 
@@ -654,6 +705,11 @@ body textarea:required:valid{
         font-family:FuturaNewDemi;
 
     }
+    @media only screen and (max-width : 1240px){
+        p{
+            padding-right: 25px;
+        }
+    }
     @media only screen and (max-width : 991px){
         text-align: center;
     }
@@ -684,20 +740,10 @@ body textarea:required:valid{
             background-position: center;
             background-repeat: no-repeat;
         }
-        &:hover{
-            background-image: url("../img/arrow-slider-red-l.png");
-            background-position: center;
-            background-repeat: no-repeat;
-        }
     }
     .right-arrow-r{
         a{
             background-image: url("../img/arrow-slider-r.png");
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        &:hover{
-            background-image: url("../img/arrow-slider-red-r.png");
             background-position: center;
             background-repeat: no-repeat;
         }
